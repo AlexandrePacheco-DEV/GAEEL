@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GAEEL - Gestão Profissional de Campeonatos de Futebol">
+    <title>GAEEL - Gestão de Campeonatos de Futebol</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="gaeel.css">
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <!-- Logo -->
+                <div class="navbar-logo">
+                    <img src="imagens/logo gaeel sem fundo.png" alt="GAEEL" class="logo-img">
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="navbar-menu desktop-menu">
+                    <a href="#hero" class="nav-link">Início</a>
+                    <a href="#sobre" class="nav-link">Sobre</a>
+                    <a href="#campeonatos" class="nav-link">Campeonatos</a>
+                    <a href="#cursos" class="nav-link">Cursos</a>
+                    <a href="#patrocinios" class="nav-link">Patrocínios</a>
+                    <a href="#area-clube" class="nav-link">Área do Clube</a>
+                </div>
+
+                <!-- CTA Button Desktop -->
+                <div class="navbar-cta desktop-menu">
+                    <a href="#area-clube" class="btn btn-primary">Área do Clube</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Menu">
+                    <i data-lucide="menu" class="icon-24"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu hidden">
+            <div class="mobile-menu-content">
+                <a href="#hero" class="mobile-nav-link">Início</a>
+                <a href="#sobre" class="mobile-nav-link">Sobre</a>
+                <a href="#campeonatos" class="mobile-nav-link">Campeonatos</a>
+                <a href="#cursos" class="mobile-nav-link">Cursos</a>
+                <a href="#patrocinios" class="mobile-nav-link">Patrocínios</a>
+                <a href="#area-clube" class="mobile-nav-link">Área do Clube</a>
+                <a href="#area-clube" class="btn btn-primary btn-block">Área do Clube</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <!-- Background Image with Overlay -->
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1705593813682-033ee2991df6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920" 
+                 alt="Estádio" class="hero-bg-img">
+            <div class="hero-overlay"></div>
+        </div>
+
+        <!-- Field Lines Pattern -->
+        <div class="hero-pattern"></div>
+
+        <!-- Content -->
+        <div class="hero-content">
+            <div class="hero-icon">
+                <i data-lucide="trophy" class="icon-64 text-yellow"></i>
+            </div>
+            
+            <h1 class="hero-title">
+                Gestão Profissional de<br>
+                <span class="text-yellow">Campeonatos de Futebol</span>
+            </h1>
+            
+            <p class="hero-subtitle">
+                A GAEEL é referência em organização e gestão de competições esportivas.
+                Junte-se aos melhores times do país.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#campeonatos" class="btn btn-yellow btn-large">
+                    <span>Inscrever Time</span>
+                    <i data-lucide="arrow-right" class="icon-20"></i>
+                </a>
+                
+                <a href="#campeonatos" class="btn btn-outline-white btn-large">
+                    <span>Ver Campeonatos</span>
+                </a>
+            </div>
+
+            <!-- Stats -->
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <div class="stat-number">150+</div>
+                    <div class="stat-label">Times Cadastrados</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">25+</div>
+                    <div class="stat-label">Campeonatos Realizados</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">3.000+</div>
+                    <div class="stat-label">Atletas Participantes</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="section bg-gray">
+        <div class="container">
+            <div class="about-grid">
+                <!-- Image -->
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1459865264687-595d652de67e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" 
+                         alt="Futebol" class="rounded-image">
+                </div>
+
+                <!-- Content -->
+                <div class="about-content">
+                    <div class="section-badge">Sobre a GAEEL</div>
+                    
+                    <h2 class="section-title">
+                        Referência em Gestão e Organização Esportiva
+                    </h2>
+                    
+                    <p class="text-large mb-8">
+                        A GAEEL - Gobi Atividades e Eventos Esportivos LTDA - é uma instituição 
+                        dedicada à organização profissional de campeonatos de futebol. Com uma estrutura 
+                        sólida e moderna, promovemos competições de alto nível que valorizam o esporte e 
+                        os atletas.
+                    </p>
+
+                    <p class="text-large mb-8">
+                        Nossa missão é transformar o cenário do futebol amador e profissional através de 
+                        uma gestão transparente, eficiente e comprometida com a excelência.
+                    </p>
+
+                    <!-- Features Grid -->
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i data-lucide="shield-check" class="icon-24 text-blue"></i>
+                            </div>
+                            <div>
+                                <h3 class="feature-title">Credibilidade</h3>
+                                <p class="feature-text">Organização transparente e profissional</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i data-lucide="users" class="icon-24 text-blue"></i>
+                            </div>
+                            <div>
+                                <h3 class="feature-title">Experiência</h3>
+                                <p class="feature-text">Anos de expertise em gestão esportiva</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i data-lucide="trophy" class="icon-24 text-blue"></i>
+                            </div>
+                            <div>
+                                <h3 class="feature-title">Competições de Alto Nível</h3>
+                                <p class="feature-text">Campeonatos estruturados e competitivos</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i data-lucide="target" class="icon-24 text-blue"></i>
+                            </div>
+                            <div>
+                                <h3 class="feature-title">Compromisso</h3>
+                                <p class="feature-text">Dedicação total ao desenvolvimento do esporte</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Championships Section -->
+    <section id="campeonatos" class="section bg-white">
+        <div class="container">
+            <!-- Header -->
+            <div class="section-header">
+                <div class="section-badge-dark">Campeonatos</div>
+                <h2 class="section-title">Competições Ativas</h2>
+                <p class="section-subtitle">
+                    Confira os campeonatos em andamento e garanta a vaga do seu time
+                </p>
+            </div>
+
+            <!-- Championships Grid -->
+            <div class="cards-grid">
+                <!-- Championship Card 1 -->
+                <div class="championship-card">
+                    <div class="championship-image">
+                        <img src="imagens/ARTE SUPER COPA EMBAÚBA-SP.png" 
+                             alt="Copa GAEEL 2026">
+                        <span class="badge badge-success">Inscrições Abertas</span>
+                        <div class="championship-overlay"></div>
+                        <div class="championship-trophy">
+                            <i data-lucide="trophy" class="icon-32 text-yellow"></i>
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <span class="category-badge">Profissional</span>
+                        <h3 class="card-title">Copa Futsal StarKids 2026</h3>
+
+                        <div class="card-info">
+                            <div class="info-item">
+                                <i data-lucide="calendar" class="icon-16 text-blue"></i>
+                                <span>Início: 15 Mar 2026</span>
+                            </div>
+                            <div class="info-item">
+                                <i data-lucide="map-pin" class="icon-16 text-blue"></i>
+                                <span>São Paulo - SP</span>
+                            </div>
+                            <div class="info-item">
+                                <i data-lucide="users" class="icon-16 text-blue"></i>
+                                <span>16 vagas</span>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary btn-block">
+                            <span>Inscrever Time</span>
+                            <i data-lucide="arrow-right" class="icon-16"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Championship Card 2 -->
+                <div class="championship-card">
+                    <div class="championship-image">
+                        <img src="https://images.unsplash.com/photo-1760420925915-c9df8825ebb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" 
+                             alt="Campeonato Regional">
+                        <span class="badge badge-success">Inscrições Abertas</span>
+                        <div class="championship-overlay"></div>
+                        <div class="championship-trophy">
+                            <i data-lucide="trophy" class="icon-32 text-yellow"></i>
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <span class="category-badge">Amador</span>
+                        <h3 class="card-title">Campeonato Regional</h3>
+
+                        <div class="card-info">
+                            <div class="info-item">
+                                <i data-lucide="calendar" class="icon-16 text-blue"></i>
+                                <span>Início: 01 Abr 2026</span>
+                            </div>
+                            <div class="info-item">
+                                <i data-lucide="map-pin" class="icon-16 text-blue"></i>
+                                <span>Interior - SP</span>
+                            </div>
+                            <div class="info-item">
+                                <i data-lucide="users" class="icon-16 text-blue"></i>
+                                <span>24 vagas</span>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary btn-block">
+                            <span>Inscrever Time</span>
+                            <i data-lucide="arrow-right" class="icon-16"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Championship Card 3 -->
+                <div class="championship-card">
+                    <div class="championship-image">
+                        <img src="https://images.unsplash.com/photo-1763751626851-024987c2f778?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" 
+                             alt="Torneio de Veteranos">
+                        <span class="badge badge-warning">Inscrições em Breve</span>
+                        <div class="championship-overlay"></div>
+                        <div class="championship-trophy">
+                            <i data-lucide="trophy" class="icon-32 text-yellow"></i>
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <span class="category-badge">Veteranos +35</span>
+                        <h3 class="card-title">Torneio de Veteranos</h3>
+
+                        <div class="card-info">
+                            <div class="info-item">
+                                <i data-lucide="calendar" class="icon-16 text-blue"></i>
+                                <span>Início: 20 Mai 2026</span>
+                            </div>
+                            <div class="info-item">
+                                <i data-lucide="map-pin" class="icon-16 text-blue"></i>
+                                <span>Grande São Paulo</span>
+                            </div>
+                            <div class="info-item">
+                                <i data-lucide="users" class="icon-16 text-blue"></i>
+                                <span>12 vagas</span>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary btn-block">
+                            <span>Inscrever Time</span>
+                            <i data-lucide="arrow-right" class="icon-16"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="text-center mt-48">
+                <a href="#area-clube" class="link-primary">
+                    <span>Ver todos os campeonatos</span>
+                    <i data-lucide="arrow-right" class="icon-20"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="cursos" class="section bg-gradient">
+        <div class="container">
+            <!-- Header -->
+            <div class="section-header">
+                <div class="section-badge">Capacitação</div>
+                <h2 class="section-title">Cursos Presenciais</h2>
+                <p class="section-subtitle">
+                    Desenvolva suas habilidades com nossos cursos especializados ministrados presencialmente
+                </p>
+            </div>
+
+            <!-- Courses Grid -->
+            <div class="cards-grid">
+                <!-- Course Card 1 -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <span class="badge-presencial">Presencial</span>
+                        <div class="course-icon">
+                            <i data-lucide="graduation-cap" class="icon-32"></i>
+                        </div>
+                        <h3 class="course-title">Gestão Esportiva Profissional</h3>
+                        <p class="course-description">
+                            Aprenda técnicas avançadas de gestão e administração de clubes e competições esportivas
+                        </p>
+                        <div class="course-instructor">Por Prof. João Silva</div>
+                    </div>
+
+                    <div class="card-content">
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i data-lucide="clock" class="icon-16 text-blue"></i>
+                                <span>40 horas</span>
+                            </div>
+                            <div class="meta-item">
+                                <i data-lucide="users" class="icon-16 text-blue"></i>
+                                <span>120+ alunos</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="level-badge">Intermediário</span>
+                            </div>
+                        </div>
+
+                        <div class="course-location">
+                            <i data-lucide="map-pin" class="icon-16 text-blue"></i>
+                            <span>São Paulo - SP</span>
+                        </div>
+
+                        <div class="course-features">
+                            <div class="feature-item">
+                                <i data-lucide="check-circle" class="icon-16 text-green"></i>
+                                <span>Certificado reconhecido</span>
+                            </div>
+                            <div class="feature-item">
+                                <i data-lucide="check-circle" class="icon-16 text-green"></i>
+                                <span>Material didático incluso</span>
+                            </div>
+                            <div class="feature-item">
+                                <i data-lucide="check-circle" class="icon-16 text-green"></i>
+                                <span>Networking com profissionais</span>
+                            </div>
+                            <div class="feature-item">
+                                <i data-lucide="check-circle" class="icon-16 text-green"></i>
+                                <span>Aulas práticas</span>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary btn-block">Solicitar Informações</button>
+                    </div>
+                </div>
+
+                <!-- Course Card 2 -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <span class="badge-presencial">Presencial</span>
+                        <div class="course-icon">
+                            <i data-lucide="graduation-cap" class="icon-32"></i>
+                        </div>
+                        <h3 class="course-title">Arbitragem e Regras do Futebol</h3>
+                        <p class="course-description">
+                            Curso completo sobre as regras oficiais do futebol e preparação para arbitragem
+                        </p>
+                        <div class="course-instructor">Por Árbitro Carlos Mendes</div>
+                    </div>
+
+                    <div class="card-content">
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i data-lucide="clock" class="icon-16 text-blue"></i>
+                                <span>30 horas</span>
+                            </div>
+                            <div class="meta-item">
+                                <i data-lucide="users" class="icon-16 text-blue"></i>
+                                <span>85+ alunos</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="level-badge">Básico</span>
+                            </div>
+                        </div>
+
+                        <div class="course-location">
+                            <i data-lucide="map-pin" class="icon-16 text-blue"></i>
+                            <span>Interior - SP</span>
+                        </div>
+
+                        <div class="course-features">
+                            <div class="feature-item">
+                                <i data-lucide="check-circle" class="icon-16 text-green"></i>
+                                <span>Certificado oficial</span>
+                            </div>
+                            <div class="feature-item">
+                                <i data-lucide="check-circle" class="icon-16 text-green"></i>
+                                <span>Aulas práticas em campo</span>
+                            </div>
+                            <div class="feature-item">
+                                <i data-lucide="check-circle" class="icon-16 text-green"></i>
+                                <span>Kit de materiais</span>
+                            </div>
+                            <div class="feature-item">
+                                <i data-lucide="check-circle" class="icon-16 text-green"></i>
+                                <span>Suporte pós-curso</span>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary btn-block">Solicitar Informações</button>
+                    </div>
+                </div>
+
+                <!-- Course Card 3 -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <span class="badge-presencial">Presencial</span>
+                        <div class="course-icon">
+                            <i data-lucide="graduation-cap" class="icon-32"></i>
+                        </div>
+                        <h3 class="course-title">Organização de Eventos Esportivos</h3>
+                        <p class="course-description">
+                            Do planejamento à execução: tudo sobre organização de campeonatos e torneios
+                        </p>
+                        <div class="course-instructor">Por Profa. Maria Santos</div>
+                    </div>
+
+                    <div class="card-content">
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i data-lucide="clock" class="icon-16 text-blue"></i>
+                                <span>25 horas</span>
+                            </div>
+                            <div class="meta-item">
+                                <i data-lucide="users" class="icon-16 text-blue"></i>
+                                <span>150+ alunos</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="level-badge">Básico</span>
+                            </div>
+                        </div>
+
+                        <div class="course-location">
+                            <i data-lucide="map-pin" class="icon-16 text-blue"></i>
+                            <span>São Paulo - SP</span>
+                        </div>
+
+                        <div class="course-features">
+                            <div class="feature-item">
+                                <i data-lucide="check-circle" class="icon-16 text-green"></i>
+                                <span>Cases reais</span>
+                            </div>
+                            <div class="feature-item">
+                                <i data-lucide="check-circle" class="icon-16 text-green"></i>
+                                <span>Templates prontos</span>
+                            </div>
+                            <div class="feature-item">
+                                <i data-lucide="check-circle" class="icon-16 text-green"></i>
+                                <span>Visitas técnicas</span>
+                            </div>
+                            <div class="feature-item">
+                                <i data-lucide="check-circle" class="icon-16 text-green"></i>
+                                <span>Certificação</span>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary btn-block">Solicitar Informações</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom CTA -->
+            <div class="cta-box mt-64">
+                <h3 class="cta-title">Cursos In Company</h3>
+                <p class="cta-text">
+                    Treinamento presencial personalizado para sua equipe ou clube. Entre em contato para mais informações.
+                </p>
+                <button class="btn btn-yellow btn-large">Solicitar Orçamento</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsorship Section -->
+    <section id="patrocinios" class="section bg-gradient-white">
+        <div class="container">
+            <!-- Header -->
+            <div class="section-header">
+                <div class="section-badge-dark">Patrocínios</div>
+                <h2 class="section-title">Seja Nosso Patrocinador</h2>
+                <p class="section-subtitle">
+                    Conecte sua marca a milhares de apaixonados por futebol
+                </p>
+            </div>
+
+            <!-- Stats Banner -->
+            <div class="stats-banner">
+                <div class="stat-item">
+                    <div class="stat-value">50K+</div>
+                    <div class="stat-desc">Público por campeonato</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">100K+</div>
+                    <div class="stat-desc">Alcance em redes sociais</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">25+</div>
+                    <div class="stat-desc">Eventos por ano</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">150+</div>
+                    <div class="stat-desc">Clubes parceiros</div>
+                </div>
+            </div>
+
+            <!-- Sponsorship Tiers -->
+            <div class="cards-grid">
+                <!-- Bronze -->
+                <div class="sponsor-card">
+                    <div class="sponsor-header bronze">
+                        <div class="sponsor-icon">
+                            <i data-lucide="award" class="icon-32"></i>
+                        </div>
+                        <h3 class="sponsor-name">Bronze</h3>
+                        <div class="sponsor-subtitle">Cota Bronze</div>
+                    </div>
+
+                    <div class="card-content">
+                        <div class="benefits-list">
+                            <div class="benefit-item">
+                                <i data-lucide="check" class="icon-20 text-green"></i>
+                                <span>Logo em materiais impressos</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i data-lucide="check" class="icon-20 text-green"></i>
+                                <span>Menção em redes sociais</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i data-lucide="check" class="icon-20 text-green"></i>
+                                <span>2 convites VIP por jogo</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i data-lucide="check" class="icon-20 text-green"></i>
+                                <span>Destaque no site</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i data-lucide="check" class="icon-20 text-green"></i>
+                                <span>Relatório de audiência</span>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary btn-block">Seja Patrocinador</button>
+                    </div>
+                </div>
+
+                <!-- Prata (Featured) -->
+                <div class="sponsor-card featured">
+                    <span class="featured-badge">Mais Popular</span>
+                    <div class="sponsor-header silver">
+                        <div class="sponsor-icon">
+                            <i data-lucide="star" class="icon-32"></i>
+                        </div>
+                        <h3 class="sponsor-name">Prata</h3>
+                        <div class="sponsor-subtitle">Cota Prata</div>
+                    </div>
+
+                    <div class="card-content">
+                        <div class="benefits-list">
+                            <div class="benefit-item">
+                                <i data-lucide="check" class="icon-20 text-green"></i>
+                                <span>Todos os benefícios Bronze</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i data-lucide="check" class="icon-20 text-green"></i>
+                                <span>Logo em uniformes de árbitros</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i data-lucide="check" class="icon-20 text-green"></i>
+                                <span>Banner no estádio</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i data-lucide="check" class="icon-20 text-green"></i>
+                                <span>5 convites VIP por jogo</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i data-lucide="check" class="icon-20 text-green"></i>
+                                <span>Ativação de marca nos jogos</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i data-lucide="check" class="icon-20 text-green"></i>
+                                <span>Entrevistas exclusivas</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i data-lucide="check" class="icon-20 text-green"></i>
+                                <span>Destaque em transmissões</span>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-yellow btn-block">Seja Patrocinador</button>
+                    </div>
+                </div>
+
+                <!-- Ouro -->
+                <div class="sponsor-card">
+                    <div class="sponsor-header gold">
+                        <div class="sponsor-icon">
+                            <i data-lucide="trending-up" class="icon-32"></i>
+                        </div>
+                        <h3 class="sponsor-name">Ouro</h3>
+                        <div class="sponsor-subtitle">Cota Ouro</div>
+                    </div>
+
+                    <div class="card-content">
+                        <div class="benefits-list">
+                            <div class="benefit-item">
+                                <i data-lucide="check" class="icon-20 text-green"></i>
+                                <span>Todos os benefícios Prata</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i data-lucide="check" class="icon-20 text-green"></i>
+                                <span>Naming rights do campeonato</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i data-lucide="check" class="icon-20 text-green"></i>
+                                <span>Logo em todos os uniformes</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i data-lucide="check" class="icon-20 text-green"></i>
+                                <span>10 convites VIP por jogo</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i data-lucide="check" class="icon-20 text-green"></i>
+                                <span>Camarote exclusivo</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i data-lucide="check" class="icon-20 text-green"></i>
+                                <span>Stand de ativação</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i data-lucide="check" class="icon-20 text-green"></i>
+                                <span>Cobertura de mídia premium</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i data-lucide="check" class="icon-20 text-green"></i>
+                                <span>Relatórios personalizados</span>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary btn-block">Seja Patrocinador</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Custom Packages -->
+            <div class="custom-package-box">
+                <h3 class="custom-title">Pacotes Personalizados</h3>
+                <p class="custom-text">
+                    Procurando algo específico? Podemos criar um pacote de patrocínio sob medida 
+                    para atender às necessidades da sua marca.
+                </p>
+                <div class="custom-buttons">
+                    <button class="btn btn-primary btn-large">Solicitar Proposta</button>
+                    <button class="btn btn-outline btn-large">Baixar Mídia Kit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Club Area Section -->
+    <section id="area-clube" class="section bg-white">
+        <div class="container">
+            <!-- Header -->
+            <div class="section-header">
+                <div class="section-badge-dark">Área do Clube</div>
+                <h2 class="section-title">Portal do Clube</h2>
+                <p class="section-subtitle">
+                    Faça login ou cadastre seu clube para acessar todos os recursos
+                </p>
+            </div>
+
+            <div class="club-grid">
+                <!-- Login/Register Form -->
+                <div class="club-form-container">
+                    <!-- Tabs -->
+                    <div class="form-tabs">
+                        <button class="tab-btn active" data-tab="login">Login</button>
+                        <button class="tab-btn" data-tab="register">Cadastrar Clube</button>
+                    </div>
+
+                    <!-- Login Form -->
+                    <form id="login-form" class="tab-content active">
+                        <div class="form-group">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" id="email" class="form-input" placeholder="seu@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password" class="form-label">Senha</label>
+                            <input type="password" id="password" class="form-input" placeholder="••••••••">
+                        </div>
+
+                        <div class="form-row">
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="checkbox">
+                                <span>Lembrar-me</span>
+                            </label>
+                            <a href="#" class="link-primary small">Esqueci a senha</a>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block btn-large">
+                            <i data-lucide="log-in" class="icon-20"></i>
+                            <span>Entrar</span>
+                        </button>
+                    </form>
+
+                    <!-- Register Form -->
+                    <form id="register-form" class="tab-content">
+                        <div class="form-group">
+                            <label for="club-name" class="form-label">Nome do Clube</label>
+                            <input type="text" id="club-name" class="form-input" placeholder="Ex: FC Example">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cnpj" class="form-label">CNPJ (opcional)</label>
+                            <input type="text" id="cnpj" class="form-input" placeholder="00.000.000/0000-00">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="register-email" class="form-label">E-mail</label>
+                            <input type="email" id="register-email" class="form-input" placeholder="contato@clube.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Telefone</label>
+                            <input type="tel" id="phone" class="form-input" placeholder="(11) 99999-9999">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="register-password" class="form-label">Senha</label>
+                            <input type="password" id="register-password" class="form-input" placeholder="Mínimo 8 caracteres">
+                        </div>
+
+                        <label class="checkbox-label mb-24">
+                            <input type="checkbox" class="checkbox">
+                            <span>Aceito os termos de uso e política de privacidade</span>
+                        </label>
+
+                        <button type="submit" class="btn btn-primary btn-block btn-large">
+                            <i data-lucide="user-plus" class="icon-20"></i>
+                            <span>Cadastrar Clube</span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Benefits Sidebar -->
+                <div class="club-benefits">
+                    <h3 class="benefits-title">Benefícios de Cadastrar seu Clube</h3>
+
+                    <div class="benefit-list">
+                        <div class="club-benefit-item">
+                            <div class="benefit-icon">
+                                <i data-lucide="file-text" class="icon-24"></i>
+                            </div>
+                            <div>
+                                <h4 class="benefit-title">Inscrição Simplificada</h4>
+                                <p class="benefit-desc">Inscreva seu time em campeonatos com poucos cliques</p>
+                            </div>
+                        </div>
+
+                        <div class="club-benefit-item">
+                            <div class="benefit-icon">
+                                <i data-lucide="calendar-check" class="icon-24"></i>
+                            </div>
+                            <div>
+                                <h4 class="benefit-title">Gestão de Jogos</h4>
+                                <p class="benefit-desc">Acompanhe calendário, resultados e classificação</p>
+                            </div>
+                        </div>
+
+                        <div class="club-benefit-item">
+                            <div class="benefit-icon">
+                                <i data-lucide="users" class="icon-24"></i>
+                            </div>
+                            <div>
+                                <h4 class="benefit-title">Cadastro de Atletas</h4>
+                                <p class="benefit-desc">Gerencie seu elenco e documentação</p>
+                            </div>
+                        </div>
+
+                        <div class="club-benefit-item">
+                            <div class="benefit-icon">
+                                <i data-lucide="bar-chart" class="icon-24"></i>
+                            </div>
+                            <div>
+                                <h4 class="benefit-title">Estatísticas</h4>
+                                <p class="benefit-desc">Acesse estatísticas completas de desempenho</p>
+                            </div>
+                        </div>
+
+                        <div class="club-benefit-item">
+                            <div class="benefit-icon">
+                                <i data-lucide="bell" class="icon-24"></i>
+                            </div>
+                            <div>
+                                <h4 class="benefit-title">Notificações</h4>
+                                <p class="benefit-desc">Receba avisos importantes em tempo real</p>
+                            </div>
+                        </div>
+
+                        <div class="club-benefit-item">
+                            <div class="benefit-icon">
+                                <i data-lucide="download" class="icon-24"></i>
+                            </div>
+                            <div>
+                                <h4 class="benefit-title">Documentos</h4>
+                                <p class="benefit-desc">Baixe súmulas, certificados e relatórios</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CTA Box -->
+                    <div class="support-box">
+                        <h4 class="support-title">Dúvidas sobre o cadastro?</h4>
+                        <p class="support-text">
+                            Nossa equipe está pronta para ajudar você a cadastrar seu clube 
+                            e participar dos campeonatos.
+                        </p>
+                        <button class="btn btn-yellow">Falar com Suporte</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Main Footer Content -->
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand Column -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="imagens/logo gaeel sem fundo.png" alt="GAEEL" class="logo-img">
+                    </div>
+                    
+                    <p class="footer-description">
+                        Referência em gestão e organização profissional de campeonatos de futebol.
+                        Transformando o esporte através da excelência.
+                    </p>
+
+                    <!-- Contact Info -->
+                    <div class="footer-contacts">
+                        <div>
+                            <h4 class="contact-title">
+                                <i data-lucide="message-circle" class="icon-20"></i>
+                                WhatsApp
+                            </h4>
+                            <div class="contact-list">
+                                <a href="https://wa.me/5517991398439" target="_blank" class="contact-link">
+                                    <i data-lucide="phone" class="icon-16"></i>
+                                    <span>(17) 99139-8439 – Jonas</span>
+                                </a>
+                                <a href="https://wa.me/5517992228821" target="_blank" class="contact-link">
+                                    <i data-lucide="phone" class="icon-16"></i>
+                                    <span>(17) 99222-8821 – Mateus</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i data-lucide="mail" class="icon-16"></i>
+                            <a href="mailto:gaeeleventos@gmail.com" class="contact-link">gaeeleventos@gmail.com</a>
+                        </div>
+
+                        <div class="contact-item">
+                            <i data-lucide="map-pin" class="icon-16"></i>
+                            <span>São Paulo - SP, Brasil</span>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i data-lucide="facebook" class="icon-20"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i data-lucide="instagram" class="icon-20"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i data-lucide="twitter" class="icon-20"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i data-lucide="youtube" class="icon-20"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Links Columns -->
+                <div class="footer-links">
+                    <h4 class="footer-heading">Institucional</h4>
+                    <ul class="link-list">
+                        <li><a href="#sobre" class="footer-link">Sobre a GAEEL</a></li>
+                        <li><a href="#sobre" class="footer-link">Missão e Valores</a></li>
+                        <li><a href="#" class="footer-link">Nossa Equipe</a></li>
+                        <li><a href="#" class="footer-link">Trabalhe Conosco</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-heading">Serviços</h4>
+                    <ul class="link-list">
+                        <li><a href="#campeonatos" class="footer-link">Campeonatos</a></li>
+                        <li><a href="#cursos" class="footer-link">Cursos</a></li>
+                        <li><a href="#patrocinios" class="footer-link">Patrocínios</a></li>
+                        <li><a href="#area-clube" class="footer-link">Área do Clube</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-heading">Suporte</h4>
+                    <ul class="link-list">
+                        <li><a href="#" class="footer-link">Central de Ajuda</a></li>
+                        <li><a href="#" class="footer-link">Regulamentos</a></li>
+                        <li><a href="#" class="footer-link">Termos de Uso</a></li>
+                        <li><a href="#" class="footer-link">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <div>
+                        <h4 class="newsletter-title">Receba Novidades</h4>
+                        <p class="newsletter-text">Cadastre-se para receber notícias e atualizações</p>
+                    </div>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu e-mail" class="newsletter-input">
+                        <button type="submit" class="btn btn-yellow">Inscrever</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p class="copyright">
+                        © 2026 GAEEL - Gobi Atividades e Eventos Esportivos LTDA. Todos os direitos reservados.
+                    </p>
+                    <div class="footer-bottom-links">
+                        <a href="#" class="footer-bottom-link">Privacidade</a>
+                        <a href="#" class="footer-bottom-link">Termos</a>
+                        <a href="#" class="footer-bottom-link">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide icons after DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>
