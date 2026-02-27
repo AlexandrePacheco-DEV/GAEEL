@@ -131,7 +131,7 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: var(--white);
+    background: var(--blue-dark);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -154,7 +154,7 @@ body {
 }
 
 .nav-link {
-    color: var(--gray-700);
+    color: #D4AF37;
     font-weight: 500;
     text-decoration: none;
     transition: color 0.3s;
@@ -242,8 +242,8 @@ body {
 }
 
 .btn-primary {
-    background: var(--blue-dark);
-    color: var(--white);
+    background:#FFD700;
+    color: #001f3f;
 }
 
 .btn-primary:hover {
@@ -318,7 +318,7 @@ body {
     position: absolute;
     inset: 0;
     background: linear-gradient(to right, 
-        rgba(0, 31, 63, 0.95), 
+        rgba(24, 76, 128, 0.95), 
         rgba(0, 31, 63, 0.85), 
         rgba(0, 31, 63, 0.75));
 }
@@ -327,11 +327,11 @@ body {
     position: absolute;
     inset: 0;
     z-index: 0;
-    opacity: 0.1;
+    opacity: 0.;
     background-image: repeating-linear-gradient(
         90deg,
-        transparent,
-        transparent 80px,
+        transparent,    
+        transparent 100px,
         rgba(255, 215, 0, 0.3) 80px,
         rgba(255, 215, 0, 0.3) 82px
     );
@@ -705,7 +705,90 @@ body {
     background: var(--warning);
     color: var(--white);
 }
+/* ==========================================
+   CARROSSEL DE PATROCINADORES
+========================================== */
 
+.sponsors-carousel {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.carousel-header {
+    margin-bottom: 40px;
+}
+
+.carousel-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+.carousel-subtitle {
+    font-size: 16px;
+    color: #64748b;
+}
+
+/* Wrapper escondendo overflow */
+.carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Track animado */
+.carousel-track {
+    display: flex;
+    width: max-content;
+    animation: scrollLeft 25s linear infinite;
+}
+
+/* Item individual */
+.carousel-item {
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.carousel-item img {
+    max-width: 150px;
+    transition: 0.3s ease;
+}
+
+.carousel-item img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.08);
+}
+
+/* Pausa ao passar o mouse */
+.carousel-wrapper:hover .carousel-track {
+    animation-play-state: paused;
+}
+
+/* Animação */
+@keyframes scrollLeft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .carousel-item {
+        width: 160px;
+    }
+
+    .carousel-item img {
+        max-width: 110px;
+    }
+}
 /* =========================================
    COURSE CARDS
    ========================================= */
