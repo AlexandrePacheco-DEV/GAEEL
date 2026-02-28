@@ -1478,6 +1478,34 @@ body {
     color: var(--yellow);
 }
 
+/* dropdown within footer for regulamentos */
+.footer-dropdown {
+    width: 100%;
+}
+.footer-dropdown summary {
+    list-style: none;
+    cursor: pointer;
+    color: rgba(255,255,255,0.8);
+    font-size: 0.875rem;
+    padding: 0;
+}
+.footer-dropdown summary::-webkit-details-marker {
+    display: none;
+}
+.footer-dropdown[open] summary {
+    color: var(--yellow);
+}
+.footer-dropdown .reg-list {
+    list-style: none;
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.footer-dropdown .reg-list .footer-link {
+    font-size: 0.875rem;
+}
 @media (min-width: 768px) {
     .footer-content {
         grid-template-columns: 2fr 1fr 1fr 1fr;
