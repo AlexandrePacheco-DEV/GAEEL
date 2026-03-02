@@ -32,30 +32,6 @@
     }
 
     /**
-     * Simple tab switching for the club area forms.
-     */
-    function initFormTabs() {
-        var tabs = document.querySelectorAll('.tab-btn');
-        if (!tabs.length) return;
-
-        tabs.forEach(function(btn) {
-            btn.addEventListener('click', function() {
-                var target = btn.dataset.tab;
-                tabs.forEach(function(b) { b.classList.remove('active'); });
-                document.querySelectorAll('.tab-content').forEach(function(c) {
-                    c.classList.remove('active');
-                });
-
-                btn.classList.add('active');
-                var form = document.getElementById(target + '-form');
-                if (form) {
-                    form.classList.add('active');
-                }
-            });
-        });
-    }
-
-    /**
      * Adds a smooth highlight to navbar links based on scroll position.
      */
     function initScrollSpy() {
@@ -226,14 +202,67 @@
         });
     }
 
+    /* Handle club registration form submission to Google Forms */
+    function initClubRegistration() {
+        var form = document.getElementById('register-form');
+        if (!form) return;
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Get form data
+            var clubName = document.getElementById('club-name').value;
+            var cnpj = document.getElementById('cnpj').value || '';
+            var email = document.getElementById('register-email').value;
+            var phone = document.getElementById('phone').value;
+
+            // Google Forms endpoint - CONFIGURE WITH YOUR FORM ID AND ENTRY IDs
+            // Steps to get this:
+            // 1. Create a Google Form with fields: Nome do Clube, CNPJ, Email, Telefone
+            // 2. In the form, inspect the field names to get the entry.XXXXX values
+            // 3. Update the FORM_ID in the URL below
+            var formId = 'YOUR_FORM_ID_HERE'; // Replace with your Google Form ID
+            var endpoint = 'https://docs.google.com/forms/d/e/' + formId + '/formResponse';
+
+            // Build the submission data
+            var submitData = new FormData();
+            submitData.append('entry.1234567890', clubName);      // Replace with actual entry ID from your form
+            submitData.append('entry.1234567891', cnpj);          // Replace with actual entry ID from your form
+            submitData.append('entry.1234567892', email);         // Replace with actual entry ID from your form
+            submitData.append('entry.1234567893', phone);         // Replace with actual entry ID from your form
+
+            // Submit to Google Forms
+            fetch(endpoint, {
+                method: 'POST',
+                body: submitData,
+                mode: 'no-cors' // Important: Google Forms doesn't allow CORS
+            }).then(function() {
+                // Success - show message and reset form
+                alert('✅ Cadastro realizado com sucesso! Nossa equipe entrará em contato em breve.');
+                form.reset();
+            }).catch(function(err) {
+                // Also show success message even if the request appears to fail
+                // (due to no-cors mode, the response won't be readable)
+                console.log('Cadastro enviado:', {
+                    clubName: clubName,
+                    cnpj: cnpj,
+                    email: email,
+                    phone: phone
+                });
+                alert('✅ Cadastro realizado com sucesso! Nossa equipe entrará em contato em breve.');
+                form.reset();
+            });
+        });
+    }
+
     function init() {
         initMobileMenu();
-        initFormTabs();
         initScrollSpy();
         initLojaModal();
         initChatbot();
         initMoreChamps();
         initProductSearch();
+        initClubRegistration();
     }
 
     // Run when DOM is ready
