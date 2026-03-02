@@ -225,7 +225,7 @@ body {
 /* lucide icons generate svg; force stroke/fill white */
 .mobile-menu-btn svg,
 .mobile-menu-btn svg * {
-    stroke: var(--white) !important;
+    stroke: var(--yellow) !important;
     fill: var(--white) !important;
 }
 
@@ -472,6 +472,33 @@ body {
 .product-card .btn {
     margin-top: auto;
     width: 100%;
+}
+
+/* Search Bar */
+.search-bar-container {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.search-input {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 2px solid var(--gray-300);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-family: inherit;
+    color: var(--gray-900);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.search-input::placeholder {
+    color: var(--gray-500);
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--blue-dark);
+    box-shadow: 0 0 0 3px rgba(0, 31, 63, 0.1);
 }
 
 /* modal / popup */

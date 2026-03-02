@@ -203,6 +203,29 @@
         }
     }
 
+    /* Search products in loja */
+    function initProductSearch() {
+        var searchInput = document.getElementById('search-products');
+        var productGrid = document.getElementById('product-grid');
+        var productCards = productGrid ? productGrid.querySelectorAll('.product-card') : [];
+        
+        if (!searchInput || !productCards.length) return;
+
+        searchInput.addEventListener('input', function() {
+            var searchTerm = this.value.toLowerCase().trim();
+            
+            productCards.forEach(function(card) {
+                var productName = card.querySelector('.product-name').textContent.toLowerCase();
+                
+                if (searchTerm === '' || productName.includes(searchTerm)) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    }
+
     function init() {
         initMobileMenu();
         initFormTabs();
@@ -210,6 +233,7 @@
         initLojaModal();
         initChatbot();
         initMoreChamps();
+        initProductSearch();
     }
 
     // Run when DOM is ready
