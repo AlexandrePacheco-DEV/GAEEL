@@ -86,10 +86,42 @@
      * Initialize lazy attributes for any <img> present (already added in markup)
      * Placeholder for potential JS enhancements.
      */
+
+    /* Loja modal helper for Mercado Livre embed */
+    function initLojaModal() {
+        var modal = document.getElementById('ml-modal');
+        var iframe = document.getElementById('ml-iframe');
+        var closeBtn = document.getElementById('modal-close');
+        if (!modal || !iframe || !closeBtn) return;
+
+        document.querySelectorAll('.view-item').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                var url = btn.getAttribute('data-url');
+                if (url) {
+                    iframe.src = url;
+                    modal.classList.remove('hidden');
+                }
+            });
+        });
+
+        closeBtn.addEventListener('click', function() {
+            modal.classList.add('hidden');
+            iframe.src = '';
+        });
+
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                modal.classList.add('hidden');
+                iframe.src = '';
+            }
+        });
+    }
+
     function init() {
         initMobileMenu();
         initFormTabs();
         initScrollSpy();
+        initLojaModal();
     }
 
     // Run when DOM is ready

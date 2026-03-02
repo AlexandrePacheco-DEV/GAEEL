@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GAEEL - loja de produtos licenciados">
+    <meta name="theme-color" content="#001F3F">
+
+    <title>Loja GAEEL - Produtos</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="imagens/logo gaeel sem fundo.png">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="gaeel.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Ir para o conteúdo</a>
+    
+        <nav class="navbar" role="navigation" aria-label="Menu principal">
+            <div class="container">
+                <div class="navbar-content">
+                    <div class="navbar-logo">
+                        <a href="gaeel.html"><img src="imagens/logo gaeel sem fundo.png" alt="GAEEL" class="logo-img" loading="lazy" decoding="async"></a>
+                    </div>
+                    <div class="navbar-menu desktop-menu">
+                        <a href="gaeel.html" class="nav-link">Início</a>
+                        <a href="lojaGaeel.html" class="nav-link active">Loja</a>
+                    </div>
+                    <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+                        <i data-lucide="menu" class="icon-24"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="mobile-menu hidden" role="menu">
+                <div class="mobile-menu-content">
+                    <a href="gaeel.html" class="mobile-nav-link">Início</a>
+                    <a href="lojaGaeel.html" class="mobile-nav-link active">Loja</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" style="padding-top: 5rem;">
+
+        <section id="loja" class="section bg-gray">
+            <div class="container">
+                <div class="section-badge">Loja</div>
+                <h2 class="section-title">Produtos em Destaque</h2>
+                <p class="mb-8">Clique em um produto para abrir a vitrine do Mercado Livre sem sair do site.</p>
+
+                <div class="product-grid">
+                    <!-- Produto 1 -->
+                    <div class="product-card">
+                        <img src="imagens/bone-spfc.jpg" alt="Boné São Paulo Estilo E Qualidade Azul Lisa" loading="lazy" decoding="async" class="product-img">
+                        <h3 class="product-name">Boné São Paulo Estilo E Qualidade Azul Lisa Un</h3>
+                        <div class="product-price-container">
+                            <span class="product-orignal-price">R$ 110</span>
+                            <span class="product-price">R$ 55<sup>90</sup></span>
+                        </div>
+                        <p class="product-installment">2x R$ 27,95 sem juros</p>
+                        <p class="product-shipping"><span class="shipping-icon">✓</span> Frete grátis por ser sua primeira compra</p>
+                        <button class="btn btn-primary view-item" data-url="https://produto.mercadolivre.com.br/MLB-1234567890-bone-sao-paulo-estilo-e-qualidade-azul-lisa_JM">
+                            Ver na Loja
+                        </button>
+                    </div>
+
+                    <!-- Produto 2 -->
+                    <div class="product-card">
+                        <img src="imagens/bone-spfc.jpg" alt="Boné São Paulo Fc - New Balance Preto" loading="lazy" decoding="async" class="product-img">
+                        <h3 class="product-name">Boné São Paulo Fc - New Balance Preto</h3>
+                        <div class="product-price-container">
+                            <span class="product-orignal-price">R$ 89,90</span>
+                            <span class="product-price">R$ 62<sup>93</sup></span>
+                            <span class="product-discount">30% OFF</span>
+                        </div>
+                        <p class="product-installment">4x R$ 15,73 sem juros</p>
+                        <p class="product-shipping"><span class="shipping-icon">✓</span> Frete grátis por ser sua primeira compra</p>
+                        <button class="btn btn-primary view-item" data-url="https://produto.mercadolivre.com.br/MLB-2234567890-bone-sao-paulo-fc-new-balance-preto_JM">
+                            Ver na Loja
+                        </button>
+                    </div>
+
+                    <!-- Produto 3 -->
+                    <div class="product-card">
+                        <img src="imagens/bone-spfc.jpg" alt="Boné New Era 9fifty Fit Aba Reta Futebol São Paulo" loading="lazy" decoding="async" class="product-img">
+                        <h3 class="product-name">Boné New Era 9fifty Fit Aba Reta Futebol São Paulo</h3>
+                        <div class="product-price-container">
+                            <span class="product-orignal-price">R$ 113,90</span>
+                            <span class="product-price">R$ 108<sup>24</sup></span>
+                            <span class="product-discount">4% OFF</span>
+                        </div>
+                        <p class="product-installment">4x R$ 27,06 sem juros</p>
+                        <p class="product-shipping"><span class="shipping-icon">✓</span> Frete grátis por ser sua primeira compra</p>
+                        <button class="btn btn-primary view-item" data-url="https://produto.mercadolivre.com.br/MLB-3234567890-bone-new-era-9fifty-fit-aba-reta-sao-paulo_JM">
+                            Ver na Loja
+                        </button>
+                    </div>
+
+                    <!-- Produto 4 -->
+                    <div class="product-card">
+                        <img src="imagens/bone-spfc.jpg" alt="Boné Escudo São Paulo Trucker Licenciado Aba Curva" loading="lazy" decoding="async" class="product-img">
+                        <h3 class="product-name">Boné Escudo São Paulo Trucker Licenciado Aba Curva</h3>
+                        <div class="product-price-container">
+                            <span class="product-orignal-price">R$ 77,90</span>
+                            <span class="product-price">R$ 63<sup>87</sup></span>
+                            <span class="product-discount">18% OFF</span>
+                        </div>
+                        <p class="product-installment">2x R$ 31,94 sem juros</p>
+                        <p class="product-shipping"><span class="shipping-icon">✓</span> Frete grátis por ser sua primeira compra</p>
+                        <button class="btn btn-primary view-item" data-url="https://produto.mercadolivre.com.br/MLB-4234567890-bone-escudo-sao-paulo-trucker-licenciado_JM">
+                            Ver na Loja
+                        </button>
+                    </div>
+
+                    <!-- Produto 5 -->
+                    <div class="product-card">
+                        <img src="imagens/bone-spfc.jpg" alt="Boné São Paulo Trucker Supercap Adulto Infantil" loading="lazy" decoding="async" class="product-img">
+                        <h3 class="product-name">Boné São Paulo Trucker Supercap Adulto Infantil</h3>
+                        <div class="product-price-container">
+                            <span class="product-price">R$ 130</span>
+                        </div>
+                        <p class="product-installment">Sem parcelamento</p>
+                        <p class="product-shipping"><span class="shipping-icon">✓</span> Frete grátis por ser sua primeira compra</p>
+                        <button class="btn btn-primary view-item" data-url="https://produto.mercadolivre.com.br/MLB-5234567890-bone-sao-paulo-trucker-supercap-adulto_JM">
+                            Ver na Loja
+                        </button>
+                    </div>
+
+                    <!-- Produto 6 -->
+                    <div class="product-card">
+                        <img src="imagens/bone-spfc.jpg" alt="Boné New Era 9fifty Stretch Snap São Paulo Futebol" loading="lazy" decoding="async" class="product-img">
+                        <h3 class="product-name">Boné New Era 9fifty Stretch Snap São Paulo Futebol</h3>
+                        <div class="product-price-container">
+                            <span class="product-orignal-price">R$ 299,90</span>
+                            <span class="product-price">R$ 249<sup>90</sup></span>
+                        </div>
+                        <p class="product-installment">6x R$ 41,65 sem juros</p>
+                        <p class="product-shipping"><span class="shipping-icon">✓</span> Frete grátis por ser sua primeira compra</p>
+                        <button class="btn btn-primary view-item" data-url="https://produto.mercadolivre.com.br/MLB-6223037352-bone-so-paulo-spfc-preto-cap-oficial-original-aba-curva-_JM?searchVariation=196705367443#polycard_client=search-desktop&searchVariation=196705367443&search_layout=grid&position=2&type=item&tracking_id=a341d16f-6341-4d5c-b4dd-3ff6e12a645f">
+                            Ver na Loja
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- modal -->
+        <div id="ml-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <div class="modal-content">
+                <button id="modal-close" class="modal-close" aria-label="Fechar">
+                    &times;
+                </button>
+                <iframe id="ml-iframe" class="modal-iframe" src="" title="Vitrine Mercado Livre"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <script src="gaeel.js"></script>
+</body>
+</html>
