@@ -117,11 +117,99 @@
         });
     }
 
+    /* Chatbot helper */
+    function initChatbot() {
+        var toggle = document.getElementById('chatbot-toggle');
+        var windowEl = document.getElementById('chatbot-window');
+        var response = document.getElementById('chatbot-response');
+
+        if (!toggle || !windowEl) return;
+
+        toggle.addEventListener('click', function(e) {
+            e.stopPropagation(); // don't let document handler close immediately
+            windowEl.classList.toggle('hidden');
+            // clear response when hiding
+            if (windowEl.classList.contains('hidden')) {
+                response.textContent = '';
+                document.removeEventListener('click', outsideClick);
+            } else {
+                // add listener to close when clicking anywhere else
+                document.addEventListener('click', outsideClick);
+            }
+        });
+
+        function outsideClick(e) {
+            // if click is outside the chatbot-window and toggle
+            if (!windowEl.contains(e.target) && e.target !== toggle) {
+                windowEl.classList.add('hidden');
+                response.textContent = '';
+                document.removeEventListener('click', outsideClick);
+            }
+        }
+
+        document.querySelectorAll('.chatbot-option').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                var action = btn.getAttribute('data-action');
+                if (action === 'inscricao') {
+                    // scroll to championships
+                    var target = document.getElementById('campeonatos');
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                    response.textContent = "Basta clicar no botão inscrever, e preencher os dados da sua equipe, e efetuar o pagamento no final, você já estará inscrito, e após isso, poderá entrar no grupo do whatsapp.";                } else if (action === 'cursos') {
+                    var target = document.getElementById('cursos');
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                    response.textContent = "Para se inscrever em nossos cursos, clique no botão “Quero me Inscrever” e preencha o formulário. Em caso de dúvidas, entre em contato por e-mail ou telefone.";
+                } else if (action === 'contato') {
+                    var target = document.getElementById('area-clube');
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                    response.textContent = "Você pode falar com nossa equipe indo à área do clube; lá encontrará formulários de contato e informações úteis. Também preparamos um grupo de WhatsApp para suporte rápido.";                }
+                // future actions can be added here
+            });
+        });
+    }
+
+    /* reveal more championships */
+    function initMoreChamps() {
+        var showBtn = document.getElementById('show-all-champs');
+        var hideBtn = document.getElementById('hide-all-champs');
+        var section = document.getElementById('more-champions');
+        if (!showBtn || !section) return;
+
+        // Show more button
+        showBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            section.classList.remove('hidden');
+            section.scrollIntoView({ behavior: 'smooth' });
+            showBtn.style.display = 'none';
+        });
+
+        // Hide more button (if exists)
+        if (hideBtn) {
+            hideBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                section.classList.add('hidden');
+                showBtn.style.display = '';
+                // scroll back to championships section
+                var champSection = document.getElementById('campeonatos');
+                if (champSection) {
+                    champSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        }
+    }
+
     function init() {
         initMobileMenu();
         initFormTabs();
         initScrollSpy();
         initLojaModal();
+        initChatbot();
+        initMoreChamps();
     }
 
     // Run when DOM is ready

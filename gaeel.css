@@ -212,9 +212,21 @@ body {
     background: none;
     border: none;
     border-radius: 0.5rem;
-    color: var(--white);
+    color: var(--white) !important;
     cursor: pointer;
     transition: background 0.3s, color 0.3s;
+}
+
+.mobile-menu-btn i,
+.mobile-menu-btn svg {
+    color: var(--white) !important;
+}
+
+/* lucide icons generate svg; force stroke/fill white */
+.mobile-menu-btn svg,
+.mobile-menu-btn svg * {
+    stroke: var(--white) !important;
+    fill: var(--white) !important;
 }
 
 .mobile-menu-btn:hover {
@@ -469,6 +481,77 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 2000;
+}
+
+/* chatbot widget */
+.chatbot {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 2200;
+    font-family: var(--font-family);
+}
+.chatbot-toggle {
+    background: var(--yellow);
+    border: none;
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+.chatbot-icon {
+    font-size: 1.5rem;
+    color: var(--blue-dark);
+}
+.chatbot-window {
+    position: absolute;
+    bottom: 4.5rem;
+    right: 0;
+    width: 280px;
+    max-width: 90vw;
+    background: var(--white);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.chatbot-header {
+    background: var(--blue-dark);
+    color: var(--white);
+    padding: 0.75rem 1rem;
+    font-weight: 700;
+}
+.chatbot-body {
+    padding: 0.75rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.chatbot-option {
+    background: var(--yellow);
+    border: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-align: left;
+}
+.chatbot-option:hover {
+    background: var(--yellow-light);
+}
+.chatbot-response {
+    padding: 0.75rem 1rem;
+    border-top: 1px solid var(--gray-200);
+    font-size: 0.9rem;
+    color: var(--gray-900);
+}
+.hidden {
+    display: none !important;
 }
 .modal.hidden {
     display: none;
@@ -1779,6 +1862,7 @@ body {
 .icon-24 {
     width: 1.5rem;
     height: 1.5rem;
+    color: white;
 }
 
 .icon-32 {

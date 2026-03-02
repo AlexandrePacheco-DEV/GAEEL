@@ -345,10 +345,125 @@
 
             <!-- CTA -->
             <div class="text-center mt-48">
-                <a href="#area-clube" class="link-primary">
+                <button id="show-all-champs" class="link-primary btn-show-all">
                     <span>Ver todos os campeonatos</span>
                     <i data-lucide="arrow-right" class="icon-20"></i>
-                </a>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- additional hidden championships -->
+    <section id="more-champions" class="section bg-white hidden">
+        <div class="container">
+            <div class="cards-grid">
+                <!-- Championship Card 4 -->
+                <div class="championship-card">
+                    <div class="championship-image">
+                        <img src="imagens/campeonato4.png" alt="Copa Regional" loading="lazy" decoding="async">
+                        <span class="badge badge-info">Em Breve</span>
+                        <div class="championship-overlay"></div>
+                        <div class="championship-trophy">
+                            <i data-lucide="trophy" class="icon-32 text-yellow"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <span class="category-badge">Amador</span>
+                        <h3 class="card-title">Copa Regional 2026</h3>
+                        <div class="card-info">
+                            <div class="info-item">
+                                <i data-lucide="calendar" class="icon-16 text-blue"></i>
+                                <span>Início: 10 Jun 2026</span>
+                            </div>
+                            <div class="info-item">
+                                <i data-lucide="map-pin" class="icon-16 text-blue"></i>
+                                <span>Interior - SP</span>
+                            </div>
+                            <div class="info-item">
+                                <i data-lucide="users" class="icon-16 text-blue"></i>
+                                <span>20 vagas</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-block">
+                            <span>Inscrever Time</span>
+                            <i data-lucide="arrow-right" class="icon-16"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- Championship Card 5 -->
+                <div class="championship-card">
+                    <div class="championship-image">
+                        <img src="imagens/campeonato5.png" alt="Torneio de Verão" loading="lazy" decoding="async">
+                        <span class="badge badge-info">Em Breve</span>
+                        <div class="championship-overlay"></div>
+                        <div class="championship-trophy">
+                            <i data-lucide="trophy" class="icon-32 text-yellow"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <span class="category-badge">Juvenil</span>
+                        <h3 class="card-title">Torneio de Verão</h3>
+                        <div class="card-info">
+                            <div class="info-item">
+                                <i data-lucide="calendar" class="icon-16 text-blue"></i>
+                                <span>Início: 05 Jul 2026</span>
+                            </div>
+                            <div class="info-item">
+                                <i data-lucide="map-pin" class="icon-16 text-blue"></i>
+                                <span>Campinas - SP</span>
+                            </div>
+                            <div class="info-item">
+                                <i data-lucide="users" class="icon-16 text-blue"></i>
+                                <span>32 vagas</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-block">
+                            <span>Inscrever Time</span>
+                            <i data-lucide="arrow-right" class="icon-16"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- Championship Card 6 -->
+                <div class="championship-card">
+                    <div class="championship-image">
+                        <img src="imagens/campeonato6.png" alt="Copa da Primavera" loading="lazy" decoding="async">
+                        <span class="badge badge-info">Em Breve</span>
+                        <div class="championship-overlay"></div>
+                        <div class="championship-trophy">
+                            <i data-lucide="trophy" class="icon-32 text-yellow"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <span class="category-badge">Amador +40</span>
+                        <h3 class="card-title">Copa da Primavera</h3>
+                        <div class="card-info">
+                            <div class="info-item">
+                                <i data-lucide="calendar" class="icon-16 text-blue"></i>
+                                <span>Início: 15 Set 2026</span>
+                            </div>
+                            <div class="info-item">
+                                <i data-lucide="map-pin" class="icon-16 text-blue"></i>
+                                <span>Ribeirão Preto - SP</span>
+                            </div>
+                            <div class="info-item">
+                                <i data-lucide="users" class="icon-16 text-blue"></i>
+                                <span>16 vagas</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-block">
+                            <span>Inscrever Time</span>
+                            <i data-lucide="arrow-right" class="icon-16"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="text-center mt-48">
+                <button id="hide-all-champs" class="link-primary btn-show-all">
+                    <span>Ver menos campeonatos</span>
+                    <i data-lucide="arrow-left" class="icon-20"></i>
+                </button>
             </div>
         </div>
     </section>
@@ -421,7 +536,7 @@
                             </div>
                         </div>
 
-                        <button class="btn btn-primary btn-block">Solicitar Informações</button>
+                        <button class="btn btn-primary btn-block">Quero me Inscrever</button>
                     </div>
                 </div>
 
@@ -478,7 +593,7 @@
                             </div>
                         </div>
 
-                        <a href="https://wa.me/5517992228821" target="_blank" class="btn btn-primary btn-block">Solicitar Informações</a>
+                        <a href="https://wa.me/5517992228821" target="_blank" class="btn btn-primary btn-block">Quero me Inscrever</a>
                     </div>
                 </div>
 
@@ -535,7 +650,7 @@
                             </div>
                         </div>
 
-                        <a href="https://wa.me/5517992228821" target="_blank" class="btn btn-primary btn-block">Solicitar Informações</a>
+                        <a href="https://wa.me/5517992228821" target="_blank" class="btn btn-primary btn-block">Quero me Inscrever</a>
                     </div>
                 </div>
             </div>
@@ -919,13 +1034,18 @@
 
                     <!-- CTA Box -->
                     <div class="support-box">
-                        <h4 class="support-title">Dúvidas sobre o cadastro?</h4>
-                        <p class="support-text">
-                            Nossa equipe está pronta para ajudar você a cadastrar seu clube 
-                            e participar dos campeonatos.
-                        </p>
-                        <button class="btn btn-yellow">Falar com Suporte</button>
-                    </div>
+    <h4 class="support-title">Dúvidas sobre o cadastro?</h4>
+    <p class="support-text">
+        Nossa equipe está pronta para ajudar você a cadastrar seu clube 
+        e participar dos campeonatos.
+    </p>
+
+    <a href="https://wa.me/5517991398439?text=Olá,%20preciso%20de%20ajuda%20na%20inscrição%20do%20meu%20time!.%20Não%20consegui%20resolver%20pelo%20site%20e%20gostaria%20de%20inscrever%20meu%20time!%20Poderiam%20me%20ajudar?          " 
+       target="_blank" 
+       class="btn btn-yellow">
+        Falar com Suporte
+    </a>
+</div>
                 </div>
             </div>
         </div>
@@ -992,8 +1112,8 @@
                     <ul class="link-list">
                         <li><a href="#sobre" class="footer-link">Sobre a GAEEL</a></li>
                         <li><a href="#sobre" class="footer-link">Missão e Valores</a></li>
-                        <li><a href="#" class="footer-link">Nossa Equipe</a></li>
-                        <li><a href="#" class="footer-link">Trabalhe Conosco</a></li>
+                        <li><a href="#sobre" class="footer-link">Nossa História</a></li>
+                        
                     </ul>
                 </div>
 
@@ -1063,6 +1183,23 @@
 
         <!-- end footer -->
     </footer>
+
+    <!-- Chatbot helper -->
+    <div id="chatbot" class="chatbot">
+        <button id="chatbot-toggle" class="chatbot-toggle" aria-label="Abrir chat de ajuda">
+            <!-- substitua src pela imagem da logo quando disponível -->
+            <img src="imagens/question.ico" alt="Chat" class="chatbot-icon" />
+        </button>
+        <div id="chatbot-window" class="chatbot-window hidden" role="dialog" aria-label="Assistente de ajuda">
+            <div class="chatbot-header">Ajuda</div>
+            <div class="chatbot-body">
+                <button class="chatbot-option" data-action="inscricao">Como me inscrever em Campeonatos?</button>
+                <button class="chatbot-option" data-action="cursos">Como me inscrever em Cursos?</button>
+                <!-- futuras opções aqui -->
+            </div>
+            <div id="chatbot-response" class="chatbot-response"></div>
+        </div>
+    </div>
 
     <!-- Scripts -->
     <script src="gaeel.js" defer></script>
