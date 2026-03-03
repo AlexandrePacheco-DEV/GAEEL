@@ -221,15 +221,15 @@
             // 1. Create a Google Form with fields: Nome do Clube, CNPJ, Email, Telefone
             // 2. In the form, inspect the field names to get the entry.XXXXX values
             // 3. Update the FORM_ID in the URL below
-            var formId = 'YOUR_FORM_ID_HERE'; // Replace with your Google Form ID
+            var formId = 'YOUR_FORM_ID_HERE'; // Replace with your Google Form ID (extracted from the public form URL)
             var endpoint = 'https://docs.google.com/forms/d/e/' + formId + '/formResponse';
 
             // Build the submission data
             var submitData = new FormData();
-            submitData.append('entry.1234567890', clubName);      // Replace with actual entry ID from your form
-            submitData.append('entry.1234567891', cnpj);          // Replace with actual entry ID from your form
-            submitData.append('entry.1234567892', email);         // Replace with actual entry ID from your form
-            submitData.append('entry.1234567893', phone);         // Replace with actual entry ID from your form
+            submitData.append('entry.1813517169', clubName);      // Nome do Clube
+            submitData.append('entry.2132704954', cnpj);          // CNPJ
+            submitData.append('entry.698435966', email);         // E-mail
+            submitData.append('entry.684761469', phone);         // Telefone
 
             // Submit to Google Forms
             fetch(endpoint, {
