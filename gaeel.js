@@ -202,57 +202,9 @@
         });
     }
 
-    /* Handle club registration form submission to Google Forms */
+    /* club registration removed - no data is collected via forms anymore */
     function initClubRegistration() {
-        var form = document.getElementById('register-form');
-        if (!form) return;
-
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            // Get form data
-            var clubName = document.getElementById('club-name').value;
-            var cnpj = document.getElementById('cnpj').value || '';
-            var email = document.getElementById('register-email').value;
-            var phone = document.getElementById('phone').value;
-
-            // Google Forms endpoint - CONFIGURE WITH YOUR FORM ID AND ENTRY IDs
-            // Steps to get this:
-            // 1. Create a Google Form with fields: Nome do Clube, CNPJ, Email, Telefone
-            // 2. In the form, inspect the field names to get the entry.XXXXX values
-            // 3. Update the FORM_ID in the URL below
-            var formId = 'YOUR_FORM_ID_HERE'; // Replace with your Google Form ID (extracted from the public form URL)
-            var endpoint = 'https://docs.google.com/forms/d/e/' + formId + '/formResponse';
-
-            // Build the submission data
-            var submitData = new FormData();
-            submitData.append('entry.1813517169', clubName);      // Nome do Clube
-            submitData.append('entry.2132704954', cnpj);          // CNPJ
-            submitData.append('entry.698435966', email);         // E-mail
-            submitData.append('entry.684761469', phone);         // Telefone
-
-            // Submit to Google Forms
-            fetch(endpoint, {
-                method: 'POST',
-                body: submitData,
-                mode: 'no-cors' // Important: Google Forms doesn't allow CORS
-            }).then(function() {
-                // Success - show message and reset form
-                alert('✅ Cadastro realizado com sucesso! Nossa equipe entrará em contato em breve.');
-                form.reset();
-            }).catch(function(err) {
-                // Also show success message even if the request appears to fail
-                // (due to no-cors mode, the response won't be readable)
-                console.log('Cadastro enviado:', {
-                    clubName: clubName,
-                    cnpj: cnpj,
-                    email: email,
-                    phone: phone
-                });
-                alert('✅ Cadastro realizado com sucesso! Nossa equipe entrará em contato em breve.');
-                form.reset();
-            });
-        });
+        // previously handled Google Forms submission; now disabled as per requirements
     }
 
     function init() {
@@ -262,7 +214,7 @@
         initChatbot();
         initMoreChamps();
         initProductSearch();
-        initClubRegistration();
+        // initClubRegistration is disabled (no form data collection)
     }
 
     // Run when DOM is ready
