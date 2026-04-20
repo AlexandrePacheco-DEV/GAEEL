@@ -204,7 +204,77 @@
 
     /* club registration removed - no data is collected via forms anymore */
     function initClubRegistration() {
-        // previously handled Google Forms submission; now disabled as per requirements
+        // Auto-open modal when clicking on any form field
+        var formFields = document.querySelectorAll('#register-form input');
+        
+        formFields.forEach(function(field) {
+            field.addEventListener('focus', function() {
+                openClubModal();
+            });
+            
+            field.addEventListener('click', function() {
+                openClubModal();
+            });
+        });
+
+        // Modal functionality for club registration
+        window.openClubModal = function() {
+            var modal = document.getElementById('club-modal');
+            if (modal) {
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            }
+        };
+
+        // Close modal functionality
+        var closeBtn = document.getElementById('modal-close');
+        var modal = document.getElementById('club-modal');
+        
+        if (closeBtn && modal) {
+            closeBtn.addEventListener('click', function() {
+                modal.classList.add('hidden');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+
+            // Close modal when clicking outside
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    modal.classList.add('hidden');
+                    document.body.style.overflow = ''; // Restore scrolling
+                }
+            });
+        }
+    }
+
+    /* Sponsor registration modal */
+    function initSponsorRegistration() {
+        // Modal functionality for sponsor registration
+        window.openSponsorModal = function() {
+            var modal = document.getElementById('sponsor-modal');
+            if (modal) {
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            }
+        };
+
+        // Close modal functionality
+        var closeBtn = document.getElementById('sponsor-modal-close');
+        var modal = document.getElementById('sponsor-modal');
+        
+        if (closeBtn && modal) {
+            closeBtn.addEventListener('click', function() {
+                modal.classList.add('hidden');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+
+            // Close modal when clicking outside
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    modal.classList.add('hidden');
+                    document.body.style.overflow = ''; // Restore scrolling
+                }
+            });
+        }
     }
 
     function init() {
@@ -214,7 +284,8 @@
         initChatbot();
         initMoreChamps();
         initProductSearch();
-        // initClubRegistration is disabled (no form data collection)
+        initClubRegistration();
+        initSponsorRegistration();
     }
 
     // Run when DOM is ready

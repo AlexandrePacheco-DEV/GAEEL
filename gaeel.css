@@ -806,7 +806,7 @@ body {
 }
 
 .section-badge-dark {
-    background: rgba(0, 31, 63, 0.1);
+    background: rgba(255, 215, 0, 0.2);
     color: var(--blue-dark);
 }
 
@@ -1427,7 +1427,7 @@ body {
 .custom-package-box {
     margin-top: 3rem;
     margin-block-end:4rem ;
-    background: var(--white);
+    background:linear-gradient(to right, var(--blue-dark), var(--blue-medium));
     border-radius: 2rem;
     box-shadow: 0 10px 10px -3px rgba(0, 0, 0, 0.1);
     padding: 2rem;
@@ -1438,13 +1438,13 @@ body {
 .custom-title {
     font-size: 1.875rem;
     font-weight: 700;
-    color: var(--gray-900);
+    color: var(--white);
     margin-bottom: 1rem;
 }
 
 .custom-text {
     font-size: 1.125rem;
-    color: var(--gray-600);
+    color: var(--white);
     margin-bottom: 2rem;
 }
 
@@ -1546,6 +1546,13 @@ body {
     margin-bottom: 0.5rem;
 }
 
+.form-input:focus {
+    outline: none;
+    border-color: var(--blue-dark);
+    box-shadow: 0 0 0 3px rgba(0, 31, 63, 0.1);
+    cursor: pointer;
+}
+
 .form-input {
     width: 100%;
     padding: 0.75rem 1rem;
@@ -1554,12 +1561,7 @@ body {
     font-family: inherit;
     font-size: 1rem;
     transition: all 0.3s;
-}
-
-.form-input:focus {
-    outline: none;
-    border-color: var(--blue-dark);
-    box-shadow: 0 0 0 3px rgba(0, 31, 63, 0.1);
+    cursor: pointer;
 }
 
 .form-row {
@@ -1582,6 +1584,26 @@ body {
     border: 1px solid var(--gray-300);
     border-radius: 0.25rem;
     cursor: pointer;
+}
+
+/* Form note */
+.form-note {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(255, 215, 0, 0.1);
+    border-radius: 0.5rem;
+    border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.form-note-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--blue-dark);
+    margin: 0;
+    font-weight: 500;
 }
 
 /* Benefits Sidebar */
@@ -2000,5 +2022,181 @@ body {
     
     .section {
         padding: 3rem 0;
+    }
+}
+
+/* =========================================
+   LECTURES
+   ========================================= */
+
+.lecture-card {
+    background: var(--white);
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.lecture-card:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    transform: translateY(-0.25rem);
+}
+
+.lecture-header {
+    background: linear-gradient(to right, var(--blue-dark), var(--blue-medium));
+    padding: 1.5rem;
+    color: var(--white);
+    position: relative;
+}
+
+.lecture-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 9999px;
+    margin-bottom: 1rem;
+}
+
+.lecture-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.lecture-description {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.lecture-speaker {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.lecture-meta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.lecture-location {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0.75rem;
+    background: rgba(255, 215, 0, 0.1);
+    border-radius: 0.5rem;
+}
+
+.lecture-location span {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--blue-dark);
+}
+
+.lecture-features {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* =========================================
+   MODAL
+   ========================================= */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.modal-overlay:not(.hidden) {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background: var(--white);
+    border-radius: 1rem;
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.modal-overlay:not(.hidden) .modal-content {
+    transform: scale(1);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--gray-200);
+    background: var(--blue-dark);
+    color: var(--white);
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.modal-close-btn {
+    background: none;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+.modal-close-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.modal-body {
+    padding: 0;
+    height: 600px;
+}
+
+.modal-body iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Responsive modal */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        max-height: 95vh;
+    }
+    
+    .modal-body {
+        height: 500px;
     }
 }
