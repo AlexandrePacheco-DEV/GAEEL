@@ -336,6 +336,21 @@ body {
     background: var(--blue-darker);
 }
 
+.btn-secondary {
+    background: #d9d9d9;
+    color: #001f3f;
+}
+
+.btn-secondary:hover {
+    background: #c0c0c0;
+}
+
+.btn-primary[disabled],
+.btn-secondary[disabled] {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
 .btn-yellow {
     background: var(--yellow);
     color: var(--blue-dark);
@@ -773,6 +788,7 @@ body {
 .section-header {
     text-align: center;
     margin-bottom: 4rem;
+    border-radius: 10rem;
 }
 
 .section-badge,
@@ -793,6 +809,7 @@ body {
     background: rgba(0, 31, 63, 0.1);
     color: var(--blue-dark);
 }
+
 
 .section-title {
     font-size: 2.5rem;
@@ -897,6 +914,19 @@ body {
 @media (min-width: 1024px) {
     .about-grid {
         grid-template-columns: repeat(2, 1fr);
+        position: relative;
+    }
+
+    .about-content {
+        padding-top: 4rem;
+    }
+
+    .about-content .section-badge {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 0;
     }
 }
 
@@ -925,7 +955,17 @@ body {
 /* =========================================
    CHAMPIONSHIP CARDS
    ========================================= */
+.cards-grid-camp{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
 
+   @media (min-width: 1024px) {
+    .cards-grid-camp {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 .championship-card {
     background: var(--white);
     border-radius: 1rem;
@@ -1385,12 +1425,14 @@ body {
 
 /* Custom Package Box */
 .custom-package-box {
-    margin-top: 4rem;
+    margin-top: 3rem;
+    margin-block-end:4rem ;
     background: var(--white);
-    border-radius: 1rem;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-    padding: 3rem;
+    border-radius: 2rem;
+    box-shadow: 0 10px 10px -3px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
     text-align: center;
+
 }
 
 .custom-title {
@@ -1429,6 +1471,8 @@ body {
     grid-template-columns: 1fr;
     gap: 3rem;
     align-items: start;
+    
+
 }
 
 @media (min-width: 1024px) {
@@ -1440,8 +1484,8 @@ body {
 /* Form Container */
 .club-form-container {
     background: var(--white);
-    border-radius: 1rem;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    border-radius: 2rem;
+    box-shadow: 0 50px 25px -5px rgba(0, 0, 0, 0.1);
     padding: 2rem;
 }
 

@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+// loja gaeel menu:  <!--<a href="lojaGaeel.html" class="nav-link">Loja GAEEL<a>-->
+loja gaeel menu CELULAR:  <!--<a href="lojaGaeel.html" class="mobile-nav-link">Loja</a>-->
+
+
+ESTRUTURA LOJA GAEEL: <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -186,3 +190,15 @@
     
 </body>
 </html>
+
+
+
+
+BOTÃO VER MAIS CAMPEONATOS (CASO TENHA MAIS DE 6 CAMPEONATOS) E CURSOS (CASO TENHA MAIS DE 6 CURSOS) NA PÁGINA INICIAL, PARA LEVAR O USUÁRIO PARA A PÁGINA DE CAMPEONATOS E CURSOS, RESPECTIVAMENTE.
+> <!-- CTA -->
+            <!-- <div class="text-center mt-48">
+                <button id="show-all-champs" class="btn btn-yellow btn-sm">
+                    <span>Ver todos os campeonatos</span>
+                    <i data-lucide="arrow-right" class="icon-20"></i>
+                </button>
+            </div> -->
