@@ -212,26 +212,26 @@ body {
     background: none;
     border: none;
     border-radius: 0.5rem;
-    color: var(--white) !important;
+    color: var(--yellow) !important;
     cursor: pointer;
     transition: background 0.3s, color 0.3s;
 }
 
 .mobile-menu-btn i,
 .mobile-menu-btn svg {
-    color: var(--white) !important;
+    color: var(--yellow) !important;
 }
 
-/* lucide icons generate svg; force stroke/fill white */
+/* lucide icons generate svg; force stroke/fill yellow */
 .mobile-menu-btn svg,
 .mobile-menu-btn svg * {
     stroke: var(--yellow) !important;
-    fill: var(--white) !important;
+    fill: var(--yellow) !important;
 }
 
 .mobile-menu-btn:hover {
-    background: rgba(255, 255, 255, 0.2);
-    color: var(--white);
+    background: rgba(255, 215, 0, 0.2);
+    color: var(--yellow);
 }
 
 .mobile-menu {
@@ -842,14 +842,21 @@ body {
     align-items: center;
 }
 
+.about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .about-image img {
     width: 100%;
     height: auto;
+    max-width: 600px;
 }
 
 .rounded-image {
     border-radius: 1rem;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 30px 25px -5px rgba(0, 0, 0, 0.1);
 }
 
 .about-content {

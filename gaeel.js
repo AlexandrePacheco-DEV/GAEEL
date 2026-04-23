@@ -277,6 +277,68 @@
         }
     }
 
+    /* Course registration modal */
+    function initCourseRegistration() {
+        // Modal functionality for course registration
+        window.openCourseModal = function() {
+            var modal = document.getElementById('course-modal');
+            if (modal) {
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            }
+        };
+
+        // Close modal functionality
+        var closeBtn = document.getElementById('course-modal-close');
+        var modal = document.getElementById('course-modal');
+        
+        if (closeBtn && modal) {
+            closeBtn.addEventListener('click', function() {
+                modal.classList.add('hidden');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+
+            // Close modal when clicking outside
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    modal.classList.add('hidden');
+                    document.body.style.overflow = ''; // Restore scrolling
+                }
+            });
+        }
+    }
+
+    /* Lecture registration modal */
+    function initLectureRegistration() {
+        // Modal functionality for lecture registration
+        window.openLectureModal = function() {
+            var modal = document.getElementById('lecture-modal');
+            if (modal) {
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            }
+        };
+
+        // Close modal functionality
+        var closeBtn = document.getElementById('lecture-modal-close');
+        var modal = document.getElementById('lecture-modal');
+        
+        if (closeBtn && modal) {
+            closeBtn.addEventListener('click', function() {
+                modal.classList.add('hidden');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+
+            // Close modal when clicking outside
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    modal.classList.add('hidden');
+                    document.body.style.overflow = ''; // Restore scrolling
+                }
+            });
+        }
+    }
+
     function init() {
         initMobileMenu();
         initScrollSpy();
@@ -286,6 +348,8 @@
         initProductSearch();
         initClubRegistration();
         initSponsorRegistration();
+        initCourseRegistration();
+        initLectureRegistration();
     }
 
     // Run when DOM is ready
