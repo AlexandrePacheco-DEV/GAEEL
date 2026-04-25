@@ -2206,4 +2206,18 @@ body {
     .modal-body {
         height: 500px;
     }
+    
+    .modal-large .modal-body {
+        height: 70vh;
+    }
+}
+
+/* Modal large for external forms */
+.modal-large {
+    max-width: 1000px;
+    width: 95%;
+}
+
+.modal-large .modal-body {
+    height: 700px;
 }
