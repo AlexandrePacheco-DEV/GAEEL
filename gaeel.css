@@ -844,6 +844,7 @@ body {
 
 .about-image {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -857,6 +858,26 @@ body {
 .rounded-image {
     border-radius: 1rem;
     box-shadow: 0 30px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* CEO Info Styles */
+.ceo-info {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.ceo-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--blue-dark);
+    margin-bottom: 0.5rem;
+}
+
+.ceo-credentials {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--yellow-dark);
+    margin: 0;
 }
 
 .about-content {
