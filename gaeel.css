@@ -395,6 +395,56 @@ body {
 }
 
 /* =========================================
+   SPONSORS CAROUSEL
+   ========================================= */
+
+.sponsors-carousel {
+    background: var(--white);
+    padding: 1rem 0;
+    margin-top: 5rem;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.sponsors-track {
+    display: flex;
+    gap: 3rem;
+    animation: scroll-sponsors 30s linear infinite;
+    width: fit-content;
+}
+
+.sponsor-item {
+    flex-shrink: 0;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.sponsor-item img {
+    max-height: 3.5rem;
+    max-width: 200px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.sponsor-item:hover img {
+    transform: scale(1.05);
+}
+
+@keyframes scroll-sponsors {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* =========================================
    HERO SECTION
    ========================================= */
 
@@ -2225,7 +2275,7 @@ body {
     }
     
     .modal-body {
-        height: 500px;
+        height: 70vh;
     }
     
     .modal-large .modal-body {

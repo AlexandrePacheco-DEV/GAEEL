@@ -234,3 +234,30 @@ PATROCINADORES DA GAEEL NA PÁGINA INICIAL, COM LOGOTIPOS E LINKS PARA OS SITES 
             </div>
         </div>
     </section>-->
+
+
+     <div class="sponsor-item">
+                <img src="imagens/ANUNCIE AQUI!.png" alt="Patrocinador 1" loading="lazy">
+            </div>
+            <div class="sponsor-item">
+                <img src="imagens/ANUNCIE AQUI!.png" alt="Patrocinador 2" loading="lazy">
+            </div>
+            <div class="sponsor-item">
+                <img src="imagens/ANUNCIE AQUI!.png" alt="Patrocinador 3" loading="lazy">
+            </div>
+            <div class="sponsor-item">
+                <img src="imagens/ANUNCIE AQUI!.png" alt="Patrocinador 4" loading="lazy">
+            </div>
+            <!-- Duplicated items for seamless loop -->
+            <div class="sponsor-item">
+                <img src="imagens/ANUNCIE AQUI!.png" alt="Patrocinador 1" loading="lazy">
+            </div>
+            <div class="sponsor-item">
+                <img src="imagens/ANUNCIE AQUI!.png" alt="Patrocinador 2" loading="lazy">
+            </div>
+            <div class="sponsor-item">
+                <img src="imagens/ANUNCIE AQUI!.png" alt="Patrocinador 3" loading="lazy">
+            </div>
+            <div class="sponsor-item">
+                <img src="imagens/ANUNCIE AQUI!.png" alt="Patrocinador 4" loading="lazy">
+            </div>  
