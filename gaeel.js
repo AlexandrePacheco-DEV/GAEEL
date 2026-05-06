@@ -123,30 +123,44 @@
             }
         }
 
-        document.querySelectorAll('.chatbot-option').forEach(function(btn) {
-            btn.addEventListener('click', function() {
-                var action = btn.getAttribute('data-action');
-                if (action === 'inscricao') {
-                    // scroll to championships
-                    var target = document.getElementById('campeonatos');
-                    if (target) {
-                        target.scrollIntoView({ behavior: 'smooth' });
-                    }
-                    response.textContent = "Basta clicar no botão inscrever, e preencher os dados da sua equipe, e efetuar o pagamento no final, você já estará inscrito, e após isso, poderá entrar no grupo do whatsapp.";                } else if (action === 'cursos') {
-                    var target = document.getElementById('cursos');
-                    if (target) {
-                        target.scrollIntoView({ behavior: 'smooth' });
-                    }
-                    response.textContent = "Para se inscrever em nossos cursos, clique no botão “Quero me Inscrever” e preencha o formulário. Em caso de dúvidas, entre em contato por e-mail ou telefone.";
-                } else if (action === 'contato') {
-                    var target = document.getElementById('area-clube');
-                    if (target) {
-                        target.scrollIntoView({ behavior: 'smooth' });
-                    }
-                    response.textContent = "Você pode falar com nossa equipe indo à área do clube; lá encontrará formulários de contato e informações úteis. Também preparamos um grupo de WhatsApp para suporte rápido.";                }
-                // future actions can be added here
-            });
-        });
+document.querySelectorAll('.chatbot-option').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+        var action = btn.getAttribute('data-action');
+        var target;
+
+        if (action === 'inscricao') {
+            target = document.getElementById('campeonatos');
+            if (target) target.scrollIntoView({ behavior: 'smooth' });
+
+            response.textContent = "Basta clicar no botão inscrever, preencher os dados da equipe e finalizar o pagamento. Após isso, você poderá entrar no grupo do WhatsApp.";
+
+        } else if (action === 'cursos') {
+            target = document.getElementById('cursos');
+            if (target) target.scrollIntoView({ behavior: 'smooth' });
+
+            response.textContent = "Para se inscrever em nossos cursos, clique em “Quero me Inscrever” e preencha o formulário. Em caso de dúvidas, entre em contato.";
+
+        } else if (action === 'contato') {
+            target = document.getElementById('area-clube');
+            if (target) target.scrollIntoView({ behavior: 'smooth' });
+
+            response.textContent = "Você pode falar com nossa equipe na área do clube. Lá você encontra formulários e acesso ao grupo de suporte.";
+
+        } else if (action === 'palestras') {
+            target = document.getElementById('palestras');
+            if (target) target.scrollIntoView({ behavior: 'smooth' });
+
+            response.textContent = "Nossas palestras são conduzidas por profissionais da área esportiva. Acesse a seção de palestras para ver os temas disponíveis e como participar.";
+
+        } else if (action === 'patrocinios') {
+            target = document.getElementById('patrocinios');
+            if (target) target.scrollIntoView({ behavior: 'smooth' });
+
+            response.textContent = "Quer ser patrocinador? Basta acessar a seção de patrocínios para conhecer os planos e benefícios de parceria com o GAEEL.";
+
+        }
+    });
+});
     }
 
     /* reveal more championships */
