@@ -1,1 +1,221 @@
-n
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAEEL - Gestão de Eventos Esportivos</title>
+    <link rel="stylesheet" href="noticias.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+     <link rel="icon" type="image/png" href="imagens/logo gaeel sem fundo.png">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <!-- LOGO -->
+            <a href="#" class="navbar-logo">
+                <img src="imagens/logo gaeel sem fundo.png" alt="GAEEL">
+            </a>
+            
+            <!-- MENU DESKTOP -->
+            <ul class="navbar-menu desktop-menu">
+                <li><a href="gaeel.html" class="nav-link">Início</a></li>
+
+            </ul>
+            
+            <!-- CTA DESKTOP -->
+            <a href="#" class="navbar-cta desktop-menu">Faça Parte!</a>
+            
+            <!-- HAMBURGUER MOBILE -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+         <div id="mobile-menu" class="mobile-menu hidden" role="menu">
+            <div class="mobile-menu-content">
+                <a href="#hero" class="mobile-nav-link">Início</a>
+                <a href="#sobre" class="mobile-nav-link">Sobre</a>
+                <a href="#campeonatos" class="mobile-nav-link">Campeonatos</a>
+                <a href="#cursos" class="mobile-nav-link">Cursos</a>
+                <a href="#palestras" class="mobile-nav-link">Palestras</a>
+                <a href="#patrocinios" class="mobile-nav-link">Patrocínios</a>
+                <a href="#area-clube" class="btn btn-primary btn-block">Faça Parte!</a>
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    <!-- Sponsors Carousel -->
+    <div class="sponsors-carousel">
+        <div class="sponsors-track">
+            <div class="sponsor-item">
+                <img src="imagens/SEJA PATROCINADOR.png" alt="Patrocinador 1" loading="lazy">
+            </div>
+            <div class="sponsor-item">
+                <img src="imagens/SEJA PATROCINADOR.png" alt="Patrocinador 2" loading="lazy">
+            </div>
+            <div class="sponsor-item">
+                <img src="imagens/SEJA PATROCINADOR.png" alt="Patrocinador 3" loading="lazy">
+            </div>
+            <div class="sponsor-item">
+                <img src="imagens/SEJA PATROCINADOR.png" alt="Patrocinador 4" loading="lazy">
+            </div>
+            <!-- Duplicated items for seamless loop -->
+            <div class="sponsor-item">
+                <img src="imagens/SEJA PATROCINADOR.png" alt="Patrocinador 1" loading="lazy">
+            </div>
+            <div class="sponsor-item">
+                <img src="imagens/SEJA PATROCINADOR.png" alt="Patrocinador 2" loading="lazy">
+            </div>
+            <div class="sponsor-item">
+                <img src="imagens/SEJA PATROCINADOR.png" alt="Patrocinador 3" loading="lazy">
+            </div>
+            <div class="sponsor-item">
+                <img src="imagens/SEJA PATROCINADOR.png" alt="Patrocinador 4" loading="lazy">
+            </div>
+            <div class="sponsor-item">
+                <img src="imagens/SEJA PATROCINADOR.png" alt="Patrocinador 5" loading="lazy">
+            </div>
+            <div class="sponsor-item">
+                <img src="imagens/SEJA PATROCINADOR.png" alt="Patrocinador 6" loading="lazy">
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN -->
+      <main class="main-container">
+        <section class="news-grid">
+            <!-- HERO CARD -->
+            <article class="hero-card">
+                <div class="hero-content">
+                    <span class="category-tag">FUTEBOL</span>
+                    <h1 class="hero-title">Brasil Conquista o Pentacampeonato Mundial de Base</h1>
+                    <p class="hero-description">Seleção sub-20 faz história com virada épica na final contra a Argentina em Montevidéu.</p>
+                </div>
+            </article>
+
+            <!-- SIDE CARDS -->
+            <div class="side-grid">
+                <article class="side-card">
+                    <div class="side-content">
+                        <h3 class="side-title">Neymar Jr. Renova com PSG</h3>
+                        <p class="side-subtitle">Contrato até 2027 garante permanência do craque</p>
+                    </div>
+                </article>
+                <article class="side-card">
+                    <div class="side-content">
+                        <h3 class="side-title">Brasileirão: Palmeiras Líder</h3>
+                        <p class="side-subtitle">Time paulista soma 7 vitórias consecutivas</p>
+                    </div>
+                </article>
+                <article class="side-card">
+                    <div class="side-content">
+                        <h3 class="side-title">Vôlei Feminino no Mundial</h3>
+                        <p class="side-subtitle">Brasil enfrenta China nas quartas</p>
+                    </div>
+                </article>
+                <article class="side-card">
+                    <div class="side-content">
+                        <h3 class="side-title">Maratona de São Paulo</h3>
+                        <p class="side-subtitle">Mais de 20 mil atletas na 28ª edição</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECONDARY NEWS -->
+        <section class="secondary-news">
+            <div class="carousel-container">
+                <button class="carousel-prev" id="prevBtn">‹</button>
+                <div class="secondary-grid" id="secondaryGrid">
+                    <!-- 5 CARDS INICIAIS -->
+                    <article class="secondary-card">
+                        <div class="secondary-content">
+                            <span class="secondary-category">TENIS</span>
+                            <h3 class="secondary-title">Alcaraz Vence Australian Open</h3>
+                        </div>
+                    </article>
+                    <article class="secondary-card">
+                        <div class="secondary-content">
+                            <span class="secondary-category">BASQUETE</span>
+                            <h3 class="secondary-title">NBA: Warriors Em Alta</h3>
+                        </div>
+                    </article>
+                    <article class="secondary-card">
+                        <div class="secondary-content">
+                            <span class="secondary-category">ATLETISMO</span>
+                            <h3 class="secondary-title">Recordes na São Silvestre</h3>
+                        </div>
+                    </article>
+                    <article class="secondary-card">
+                        <div class="secondary-content">
+                            <span class="secondary-category">NATACAO</span>
+                            <h3 class="secondary-title">Dressel Dominante</h3>
+                        </div>
+                    </article>
+                    <article class="secondary-card">
+                        <div class="secondary-content">
+                            <span class="secondary-category">MMA</span>
+                            <h3 class="secondary-title">UFC 300 Anunciado</h3>
+                        </div>
+                    </article>
+                    <!-- MAIS 5 CARDS (hidden) -->
+                    <article class="secondary-card hidden">
+                        <div class="secondary-content">
+                            <span class="secondary-category">FUTEBOL</span>
+                            <h3 class="secondary-title">Libertadores: Fase de Grupos</h3>
+                        </div>
+                    </article>
+                    <article class="secondary-card hidden">
+                        <div class="secondary-content">
+                            <span class="secondary-category">MOTOCICLISMO</span>
+                            <h3 class="secondary-title">MotoGP: Márquez Campeão</h3>
+                        </div>
+                    </article>
+                    <article class="secondary-card hidden">
+                        <div class="secondary-content">
+                            <span class="secondary-category">SURFE</span>
+                            <h3 class="secondary-title">WSL Pipeline Masters</h3>
+                        </div>
+                    </article>
+                    <article class="secondary-card hidden">
+                        <div class="secondary-content">
+                            <span class="secondary-category">GINASTICA</span>
+                            <h3 class="secondary-title">Olimpíadas Paris 2024</h3>
+                        </div>
+                    </article>
+                    <article class="secondary-card hidden">
+                        <div class="secondary-content">
+                            <span class="secondary-category">E-SPORTS</span>
+                            <h3 class="secondary-title">CS2 Major no Brasil</h3>
+                        </div>
+                    </article>
+                </div>
+                <button class="carousel-next" id="nextBtn">›</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos de Uso</a>
+            <a href="#">Contato</a>
+            <a href="#">Redes Sociais</a>
+        </div>
+        <p>&copy; 2024 GAEEL. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
