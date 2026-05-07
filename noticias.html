@@ -1,15 +1,14 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GAEEL - Gestão de Eventos Esportivos</title>
+    <title>GAEEL - Notícias Esportivos</title>
     <link rel="stylesheet" href="noticias.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
-     <link rel="icon" type="image/png" href="imagens/logo gaeel sem fundo.png">
+    <link rel="icon" type="image/png" href="imagens/logo gaeel sem fundo.png">
 </head>
 <body>
     <!-- NAVBAR -->
@@ -22,8 +21,12 @@
             
             <!-- MENU DESKTOP -->
             <ul class="navbar-menu desktop-menu">
-                <li><a href="gaeel.html" class="nav-link">Início</a></li>
-
+                <li><a href="#" class="nav-link">Início</a></li>
+                <li><a href="#" class="nav-link">Sobre</a></li>
+                <li><a href="#" class="nav-link">Campeonatos</a></li>
+                <li><a href="#" class="nav-link">Cursos</a></li>
+                <li><a href="#" class="nav-link">Palestras</a></li>
+                <li><a href="#" class="nav-link">Patrocínios</a></li>
             </ul>
             
             <!-- CTA DESKTOP -->
@@ -40,21 +43,19 @@
         </div>
     </nav>
 
-         <div id="mobile-menu" class="mobile-menu hidden" role="menu">
-            <div class="mobile-menu-content">
-                <a href="#hero" class="mobile-nav-link">Início</a>
-                <a href="#sobre" class="mobile-nav-link">Sobre</a>
-                <a href="#campeonatos" class="mobile-nav-link">Campeonatos</a>
-                <a href="#cursos" class="mobile-nav-link">Cursos</a>
-                <a href="#palestras" class="mobile-nav-link">Palestras</a>
-                <a href="#patrocinios" class="mobile-nav-link">Patrocínios</a>
-                <a href="#area-clube" class="btn btn-primary btn-block">Faça Parte!</a>
-            </div>
+    <!-- MENU MOBILE -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <a href="#" class="mobile-nav-link">Início</a>
+            <a href="#" class="mobile-nav-link">Sobre</a>
+            <a href="#" class="mobile-nav-link">Campeonatos</a>
+            <a href="#" class="mobile-nav-link">Cursos</a>
+            <a href="#" class="mobile-nav-link">Palestras</a>
+            <a href="#" class="mobile-nav-link">Patrocínios</a>
+            <a href="#" class="mobile-nav-link navbar-cta">Faça Parte!</a>
         </div>
-    </nav>
-    </header>
-
-    <!-- Sponsors Carousel -->
+    </div>
+       <!-- SPONSORS CAROUSEL -->
     <div class="sponsors-carousel">
         <div class="sponsors-track">
             <div class="sponsor-item">
@@ -69,7 +70,7 @@
             <div class="sponsor-item">
                 <img src="imagens/SEJA PATROCINADOR.png" alt="Patrocinador 4" loading="lazy">
             </div>
-            <!-- Duplicated items for seamless loop -->
+            <!-- Duplicated for seamless loop -->
             <div class="sponsor-item">
                 <img src="imagens/SEJA PATROCINADOR.png" alt="Patrocinador 1" loading="lazy">
             </div>
@@ -90,45 +91,58 @@
             </div>
         </div>
     </div>
-
     <!-- MAIN -->
-      <main class="main-container">
+    <main class="main-container">
         <section class="news-grid">
             <!-- HERO CARD -->
             <article class="hero-card">
-                <div class="hero-content">
-                    <span class="category-tag">FUTEBOL</span>
-                    <h1 class="hero-title">Brasil Conquista o Pentacampeonato Mundial de Base</h1>
-                    <p class="hero-description">Seleção sub-20 faz história com virada épica na final contra a Argentina em Montevidéu.</p>
-                    <a href="https://ge.globo.com/futebol/" target="_blank" class="hero-card"></a>
-                </div>
+                <a href="gaeel.html#campeonatos" class="hero-link">
+                    <img src="noticias/INSCRIÇÕES ABERTAS GAEEL.png" alt="Campeonato Starkids Campo" class="hero-image">
+                    <div class="hero-content">
+                        <span class="category-tag">STARKIDS 2026</span>
+                        <h1 class="hero-title">Inscrições Abertas para o Campeonato Starkids Campo</h1>
+                        <p class="hero-description">Inscreva seu time, entre em campo e dispute com os melhores talentos da base. Garanta agora sua participação no torneio Starkids, fazendo sua inscrição agora!</p>
+                    </div>
+                </a>
             </article>
 
             <!-- SIDE CARDS -->
             <div class="side-grid">
                 <article class="side-card">
-                    <div class="side-content">
-                        <h3 class="side-title">Neymar Jr. Renova com PSG</h3>
-                        <p class="side-subtitle">Contrato até 2027 garante permanência do craque</p>
-                    </div>
+                    <a href="https://ge.globo.com/futebol/" target="_blank" rel="noreferrer" class="side-link">
+                        <img src="noticias/card1.jpg" alt="Neymar Jr. renova com PSG" class="side-image">
+                        <div class="side-content">
+                            <h3 class="side-title">Neymar Jr. Renova com PSG</h3>
+                            <p class="side-subtitle">Contrato até 2027 garante permanência do craque</p>
+                        </div>
+                    </a>
                 </article>
                 <article class="side-card">
-                    <div class="side-content">
-                        <h3 class="side-title">Brasileirão: Palmeiras Líder</h3>
-                        <p class="side-subtitle">Time paulista soma 7 vitórias consecutivas</p>
-                    </div>
+                    <a href="https://ge.globo.com/futebol/" target="_blank" rel="noreferrer" class="side-link">
+                        <img src="noticias/card2.jpg" alt="Palmeiras líder do Brasileirão" class="side-image">
+                        <div class="side-content">
+                            <h3 class="side-title">Brasileirão: Palmeiras Líder</h3>
+                            <p class="side-subtitle">Time paulista soma 7 vitórias consecutivas</p>
+                        </div>
+                    </a>
                 </article>
                 <article class="side-card">
-                    <div class="side-content">
-                        <h3 class="side-title">Vôlei Feminino no Mundial</h3>
-                        <p class="side-subtitle">Brasil enfrenta China nas quartas</p>
-                    </div>
+                    <a href="https://ge.globo.com/volei/" target="_blank" rel="noreferrer" class="side-link">
+                        <img src="noticias/card3.jpg" alt="Vôlei feminino no mundial" class="side-image">
+                        <div class="side-content">
+                            <h3 class="side-title">Vôlei Feminino no Mundial</h3>
+                            <p class="side-subtitle">Brasil enfrenta China nas quartas</p>
+                        </div>
+                    </a>
                 </article>
                 <article class="side-card">
-                    <div class="side-content">
-                        <h3 class="side-title">Maratona de São Paulo</h3>
-                        <p class="side-subtitle">Mais de 20 mil atletas na 28ª edição</p>
-                    </div>
+                    <a href="https://ge.globo.com/" target="_blank" rel="noreferrer" class="side-link">
+                        <img src="noticias/card4.jpg" alt="Maratona de São Paulo" class="side-image">
+                        <div class="side-content">
+                            <h3 class="side-title">Maratona de São Paulo</h3>
+                            <p class="side-subtitle">Mais de 20 mil atletas na 28ª edição</p>
+                        </div>
+                    </a>
                 </article>
             </div>
         </section>
@@ -140,65 +154,95 @@
                 <div class="secondary-grid" id="secondaryGrid">
                     <!-- 5 CARDS INICIAIS -->
                     <article class="secondary-card">
-                        <div class="secondary-content">
-                            <span class="secondary-category">TENIS</span>
-                            <h3 class="secondary-title">Alcaraz Vence Australian Open</h3>
-                        </div>
+                        <a href="https://ge.globo.com/tenis/" target="_blank" rel="noreferrer">
+                            <img src="noticias/card5.jpg" alt="Alcaraz vence Australian Open" class="secondary-image">
+                            <div class="secondary-content">
+                                <span class="secondary-category">TENIS</span>
+                                <h3 class="secondary-title">Alcaraz Vence Australian Open</h3>
+                            </div>
+                        </a>
                     </article>
                     <article class="secondary-card">
-                        <div class="secondary-content">
-                            <span class="secondary-category">BASQUETE</span>
-                            <h3 class="secondary-title">NBA: Warriors Em Alta</h3>
-                        </div>
+                        <a href="https://ge.globo.com/basquete/" target="_blank" rel="noreferrer">
+                            <img src="noticias/card6.jpg" alt="Warriors em alta" class="secondary-image">
+                            <div class="secondary-content">
+                                <span class="secondary-category">BASQUETE</span>
+                                <h3 class="secondary-title">NBA: Warriors Em Alta</h3>
+                            </div>
+                        </a>
                     </article>
                     <article class="secondary-card">
-                        <div class="secondary-content">
-                            <span class="secondary-category">ATLETISMO</span>
-                            <h3 class="secondary-title">Recordes na São Silvestre</h3>
-                        </div>
+                        <a href="https://ge.globo.com/atletismo/" target="_blank" rel="noreferrer">
+                            <img src="noticias/card7.jpg" alt="Recordes na São Silvestre" class="secondary-image">
+                            <div class="secondary-content">
+                                <span class="secondary-category">ATLETISMO</span>
+                                <h3 class="secondary-title">Recordes na São Silvestre</h3>
+                            </div>
+                        </a>
                     </article>
                     <article class="secondary-card">
-                        <div class="secondary-content">
-                            <span class="secondary-category">NATACAO</span>
-                            <h3 class="secondary-title">Dressel Dominante</h3>
-                        </div>
+                        <a href="https://ge.globo.com/natacao/" target="_blank" rel="noreferrer">
+                            <img src="noticias/card8.jpg" alt="Dressel dominante" class="secondary-image">
+                            <div class="secondary-content">
+                                <span class="secondary-category">NATACAO</span>
+                                <h3 class="secondary-title">Dressel Dominante</h3>
+                            </div>
+                        </a>
                     </article>
                     <article class="secondary-card">
-                        <div class="secondary-content">
-                            <span class="secondary-category">MMA</span>
-                            <h3 class="secondary-title">UFC 300 Anunciado</h3>
-                        </div>
+                        <a href="https://ge.globo.com/" target="_blank" rel="noreferrer">
+                            <img src="noticias/card9.jpg" alt="UFC 300 anunciado" class="secondary-image">
+                            <div class="secondary-content">
+                                <span class="secondary-category">MMA</span>
+                                <h3 class="secondary-title">UFC 300 Anunciado</h3>
+                            </div>
+                        </a>
                     </article>
                     <!-- MAIS 5 CARDS (hidden) -->
                     <article class="secondary-card hidden">
-                        <div class="secondary-content">
-                            <span class="secondary-category">FUTEBOL</span>
-                            <h3 class="secondary-title">Libertadores: Fase de Grupos</h3>
-                        </div>
+                        <a href="https://ge.globo.com/" target="_blank" rel="noreferrer">
+                            <img src="noticias/card10.jpg" alt="Libertadores fase de grupos" class="secondary-image">
+                            <div class="secondary-content">
+                                <span class="secondary-category">FUTEBOL</span>
+                                <h3 class="secondary-title">Libertadores: Fase de Grupos</h3>
+                            </div>
+                        </a>
                     </article>
                     <article class="secondary-card hidden">
-                        <div class="secondary-content">
-                            <span class="secondary-category">MOTOCICLISMO</span>
-                            <h3 class="secondary-title">MotoGP: Márquez Campeão</h3>
-                        </div>
+                        <a href="https://ge.globo.com/motociclismo/" target="_blank" rel="noreferrer">
+                            <img src="noticias/card11.jpg" alt="MotoGP: Márquez campeão" class="secondary-image">
+                            <div class="secondary-content">
+                                <span class="secondary-category">MOTOCICLISMO</span>
+                                <h3 class="secondary-title">MotoGP: Márquez Campeão</h3>
+                            </div>
+                        </a>
                     </article>
                     <article class="secondary-card hidden">
-                        <div class="secondary-content">
-                            <span class="secondary-category">SURFE</span>
-                            <h3 class="secondary-title">WSL Pipeline Masters</h3>
-                        </div>
+                        <a href="https://ge.globo.com/" target="_blank" rel="noreferrer">
+                            <img src="noticias/card12.jpg" alt="WSL Pipeline Masters" class="secondary-image">
+                            <div class="secondary-content">
+                                <span class="secondary-category">SURFE</span>
+                                <h3 class="secondary-title">WSL Pipeline Masters</h3>
+                            </div>
+                        </a>
                     </article>
                     <article class="secondary-card hidden">
-                        <div class="secondary-content">
-                            <span class="secondary-category">GINASTICA</span>
-                            <h3 class="secondary-title">Olimpíadas Paris 2024</h3>
-                        </div>
+                        <a href="https://ge.globo.com/" target="_blank" rel="noreferrer">
+                            <img src="noticias/card13.jpg" alt="Olimpíadas Paris 2024" class="secondary-image">
+                            <div class="secondary-content">
+                                <span class="secondary-category">GINASTICA</span>
+                                <h3 class="secondary-title">Olimpíadas Paris 2024</h3>
+                            </div>
+                        </a>
                     </article>
                     <article class="secondary-card hidden">
-                        <div class="secondary-content">
-                            <span class="secondary-category">E-SPORTS</span>
-                            <h3 class="secondary-title">CS2 Major no Brasil</h3>
-                        </div>
+                        <a href="https://ge.globo.com/" target="_blank" rel="noreferrer">
+                            <img src="noticias/card14.jpg" alt="CS2 Major no Brasil" class="secondary-image">
+                            <div class="secondary-content">
+                                <span class="secondary-category">E-SPORTS</span>
+                                <h3 class="secondary-title">CS2 Major no Brasil</h3>
+                            </div>
+                        </a>
                     </article>
                 </div>
                 <button class="carousel-next" id="nextBtn">›</button>
@@ -217,6 +261,6 @@
         <p>&copy; 2024 GAEEL. Todos os direitos reservados.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="noticias.js"></script>
 </body>
 </html>
