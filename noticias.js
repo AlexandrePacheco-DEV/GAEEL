@@ -1,6 +1,6 @@
 ﻿document.addEventListener('DOMContentLoaded', function() {
     // MENU HAMBURGUER
-    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const hamburgerBtn = document.getElementById('mobileMenuBtn');
     const mobileMenu = document.getElementById('mobileMenu');
     
     hamburgerBtn.addEventListener('click', function() {
@@ -9,7 +9,7 @@
     });
     
     // Fechar menu ao clicar em item
-    document.querySelectorAll('.menu-item').forEach(item => {
+    document.querySelectorAll('.mobile-nav-link').forEach(item => {
         item.addEventListener('click', function() {
             hamburgerBtn.classList.remove('active');
             mobileMenu.classList.remove('active');

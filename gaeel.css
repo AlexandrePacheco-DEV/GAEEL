@@ -215,7 +215,9 @@ body {
     color: var(--yellow) !important;
     cursor: pointer;
     transition: background 0.3s, color 0.3s;
+    right: -100%;
 }
+
 
 .mobile-menu-btn i,
 .mobile-menu-btn svg {
