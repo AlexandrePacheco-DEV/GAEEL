@@ -1936,6 +1936,7 @@ body {
     font-size: 1.125rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
+    margin-left: 0px;
 }
 
 .newsletter-text {
@@ -1962,6 +1963,12 @@ body {
 
 .newsletter-input::placeholder {
     color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+    .newsletter-content {
+        align-items: flex-start;
+    }
 }
 
 .newsletter-input:focus {

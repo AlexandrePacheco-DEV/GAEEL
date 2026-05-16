@@ -1117,7 +1117,7 @@ body {
 
 .side-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 25px 50px rgba(17, 24, 39, 0.6);
+    box-shadow: 0 5px 50px rgba(17, 24, 39, 0.6);
 }
 
 .side-card:hover::before {
