@@ -56,7 +56,13 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: var(--blue-dark);
+    background: radial-gradient(
+        circle at 85% 15%,
+        #0A1FA8 0%,
+        #06136B 25%,
+        #01033C 55%,
+        #01001F 100%
+    );
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -68,11 +74,11 @@ body {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 1.5rem;
-    overflow-x: auto;
+    overflow: hidden;
 }
 
 .navbar-logo img {
-    height: 4rem;
+    height: 4.8rem;
     width: auto;
 }
 
@@ -106,7 +112,7 @@ body {
 }
 
 .navbar-cta {
-    background: var(--yellow);
+    background: #f4b400;
     color: var(--blue-dark);
     padding: 0.75rem 1.5rem;
     border-radius: 0.5rem;
@@ -157,7 +163,13 @@ body {
     top: 5rem;
     left: 0;
     right: 0;
-    background: var(--blue-dark);
+    background: radial-gradient(
+        circle at 85% 15%,
+        #0A1FA8 0%,
+        #06136B 25%,
+        #01033C 55%,
+        #01001F 100%
+    );
     transform: translateY(-100%);
     transition: transform 0.3s ease;
     z-index: 999;
@@ -444,7 +456,7 @@ main,
 
 .carousel-prev:hover,
 .carousel-next:hover {
-    background: var(--yellow);
+    background: #f4b400;
     color: var(--blue-dark);
     transform: translateY(-50%) scale(1.1);
 }
@@ -575,7 +587,13 @@ main,
 
 /* FOOTER */
 .footer {
-    background: var(--blue-dark);
+    background: radial-gradient(
+        circle at 85% 15%,
+        #0A1FA8 0%,
+        #06136B 25%,
+        #01033C 55%,
+        #01001F 100%
+    );
     color: var(--white);
     text-align: center;
     padding: 3rem 2rem;
@@ -752,7 +770,7 @@ main,
 }
 
 .navbar-cta {
-    background: var(--yellow);
+    background: #f4b400;
     color: var(--blue-dark);
     padding: 0.75rem 1.5rem;
     border-radius: 0.5rem;
@@ -803,7 +821,13 @@ main,
     top: 5rem;
     left: 0;
     right: 0;
-    background: var(--blue-dark);
+    background: radial-gradient(
+        circle at 85% 15%,
+        #0A1FA8 0%,
+        #06136B 25%,
+        #01033C 55%,
+        #01001F 100%
+    );
     transform: translateY(-100%);
     transition: transform 0.3s ease;
     z-index: 999;
@@ -1001,7 +1025,13 @@ body {
     height: 32rem;
     border-radius: 1.5rem;
     overflow: hidden;
-    background: linear-gradient(135deg, var(--blue-darker) 0%, var(--blue-dark) 100%);
+    background: radial-gradient(
+        circle at 85% 15%,
+        #0A1FA8 0%,
+        #06136B 25%,
+        #01033C 55%,
+        #01001F 100%
+    );
     cursor: pointer;
     transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     box-shadow: 0 25px 50px -12px rgba(0, 31, 63, 0.4);
@@ -1748,7 +1778,13 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: var(--blue-dark);
+    background: radial-gradient(
+        circle at 85% 15%,
+        #0A1FA8 0%,
+        #06136B 25%,
+        #01033C 55%,
+        #01001F 100%
+    );
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -1760,11 +1796,11 @@ body {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 1.5rem;
-    overflow-x: auto;
+    overflow: hidden;
 }
 
 .navbar-logo img {
-    height: 4rem;
+    height: 4.8rem;
     width: auto;
 }
 
@@ -1798,7 +1834,7 @@ body {
 }
 
 .navbar-cta {
-    background: var(--yellow);
+    background: #f4b400;
     color: var(--blue-dark);
     padding: 0.75rem 1.5rem;
     border-radius: 0.5rem;
@@ -1849,7 +1885,13 @@ body {
     top: 5rem;
     left: 0;
     right: 0;
-    background: var(--blue-dark);
+    background: radial-gradient(
+        circle at 85% 15%,
+        #0A1FA8 0%,
+        #06136B 25%,
+        #01033C 55%,
+        #01001F 100%
+    );
     transform: translateY(-100%);
     transition: transform 0.3s ease;
     z-index: 999;
@@ -1966,7 +2008,13 @@ main,
     position: relative;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue-medium) 100%);
+    background: radial-gradient(
+        circle at 85% 15%,
+        #0A1FA8 0%,
+        #06136B 25%,
+        #01033C 55%,
+        #01001F 100%
+    );
     overflow: hidden;
     padding-top: 5rem;
 }
@@ -2034,7 +2082,7 @@ main,
 .category-badge-news,
 .secondary-category {
     display: inline-block;
-    background: var(--yellow);
+    background: #f4b400;
     color: var(--blue-dark);
     padding: 0.25rem 0.75rem;
     border-radius: 9999px;
@@ -2107,7 +2155,7 @@ main,
 
 .carousel-prev:hover,
 .carousel-next:hover {
-    background: var(--yellow);
+    background: #f4b400;
     color: var(--blue-dark);
     transform: translateY(-50%) scale(1.1);
 }
@@ -2160,7 +2208,13 @@ main,
             display: flex;
             align-items: center;
             margin-top: 5rem;
-            background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue-medium) 100%);
+            background: radial-gradient(
+        circle at 85% 15%,
+        #0A1FA8 0%,
+        #06136B 25%,
+        #01033C 55%,
+        #01001F 100%
+    );
             overflow: hidden;
         }
 
@@ -2222,7 +2276,7 @@ main,
 
         .category-badge-news {
             display: inline-block;
-            background: var(--yellow);
+            background: #f4b400;
             color: var(--blue-dark);
             padding: 0.25rem 0.75rem;
             border-radius: 9999px;
@@ -2334,7 +2388,7 @@ main,
         }
 
         .carousel-prev:hover, .carousel-next:hover {
-            background: var(--yellow);
+            background: #f4b400;
             color: var(--blue-dark);
             transform: translateY(-50%) scale(1.1);
         }
@@ -2373,7 +2427,7 @@ main,
 
         .secondary-category {
             display: inline-block;
-            background: var(--yellow);
+            background: #f4b400;
             color: var(--blue-dark);
             padding: 0.25rem 0.75rem;
             border-radius: 9999px;
@@ -2465,7 +2519,13 @@ main,
 .form-modal-header {
     height: 70px;
     padding: 0 1.5rem;
-    background: #001F3F;
+    background: radial-gradient(
+        circle at 85% 15%,
+        #0A1FA8 0%,
+        #06136B 25%,
+        #01033C 55%,
+        #01001F 100%
+    );
     color: #fff;
     display: flex;
     align-items: center;
@@ -2527,4 +2587,4 @@ main,
         height: 80vh;
     }
 }
-        }
+        }     }

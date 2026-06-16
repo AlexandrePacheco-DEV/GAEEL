@@ -9,7 +9,7 @@
     <!-- Open Graph / Social -->
     <meta property="og:title" content="GAEEL - Notícias Esportivas">
     <meta property="og:description" content="Fique por dentro das últimas notícias dos nossos campeonatos e eventos esportivos.">
-    <meta property="og:image" content="./imagens/logo gaeel sem fundo.png">
+    <meta property="og:image" content="./imagens/logo atualizada.png">
     <meta property="og:url" content="https://gaeel.com/noticias.html">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="./imagens/logo gaeel sem fundo.png">
+    <link rel="icon" type="image/png" href="./imagens/logo atualizada.png">
     
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -281,7 +281,7 @@
     box-shadow: 0 20px 40px rgba(0,0,0,0.14);
 }
 
-.card-1 {
+.secondary-card--premium {
     background: linear-gradient(135deg, #BF953F 0%, #FCF6BA 25%, #B38728 50%, #FBF5B7 75%, #AA771C 100%) !important;
     background-size: 200% 200% !important;
     animation: goldShine 5s linear infinite !important;
@@ -296,17 +296,17 @@
     100% { background-position: 0% 50%; }
 }
 
-.card-1 .secondary-content {
+.secondary-card--premium .secondary-content {
     background: transparent !important;
 }
 
-.card-1 .secondary-title {
+.secondary-card--premium .secondary-title {
     color: #001F3F !important;
     font-weight: 900 !important;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) !important;
 }
 
-.card-1 .secondary-category {
+.secondary-card--premium .secondary-category {
     background: #001F3F !important;
     color: #FFD700 !important;
     border: 1px solid #FFD700 !important;
@@ -395,33 +395,10 @@
 
     .secondary-grid {
         grid-template-columns: 1fr;
-        gap: 1.2rem;
-        padding: 0 0.5rem;
-    }
-
-    .secondary-card {
-        border-radius: 18px;
-        box-shadow: 0 8px 25px rgba(0,0,0,0.06);
     }
 
     .secondary-image {
-        height: 200px;
-        object-fit: cover;
-    }
-
-    .secondary-content {
-        padding: 1.25rem;
-    }
-
-    .secondary-category {
-        padding: 0.35rem 0.8rem;
-        font-size: 0.7rem;
-        margin-bottom: 0.8rem;
-    }
-
-    .secondary-title {
-        font-size: 1.1rem;
-        line-height: 1.4;
+        height: 220px;
     }
 
     .carousel-prev,
@@ -441,7 +418,7 @@
                 <!-- Logo -->
                 <div class="navbar-logo">
                     <a href="index.html">
-                        <img src="./imagens/logo gaeel sem fundo.png" alt="GAEEL" class="logo-img" loading="lazy" decoding="async">
+                        <img src="./imagens/logo atualizada.png" alt="GAEEL" class="logo-img" loading="lazy" decoding="async">
                     </a>
                 </div>
 
@@ -588,7 +565,7 @@
 
                     
                     <div class="secondary-grid" id="secondaryGrid">
-<article class="secondary-card card-1" onclick="window.open('https://www.google.com/search?sa=X&sca_esv=e46683753607c2b3&biw=1366&bih=633&sxsrf=ANbL-n57fLVMKbaWUy4yUHNsZZAcoNUEIA:1781568586786&q=jogos+de+copa+do+mundo&si=AL3DRZHEhiMLEgZ6ptfJdlKOuijTyen89BMlkLHvUgNaFHJkDdblgC0Uu52KsaMtKHJ257eHidzewwozW6B-0hByfVSviU3hplbuKOuKgLGKo-UfqY8XpKKbPQHcrUEhYND9WUcTki1Ad6WyWWBgZI8WqSbOOQW9UFXKafPqTKhEN0a5SxjSIL-BmStF6ruM0H3lpNZult8-TZjrX3LY545NsP2NsANBVyGcoCqi4fSpc05EXJuUkSh-MSclMoitnVMG1qTr63Ukt0a2RvvcDeRfknIskDWTbW9N2u_uITdeArhXizjUhJRvDXd7jIhZhxeG_NdevC4W', '_blank')">
+<article class="secondary-card secondary-card--premium" onclick="window.open('https://www.google.com/search?sa=X&sca_esv=e46683753607c2b3&biw=1366&bih=633&sxsrf=ANbL-n57fLVMKbaWUy4yUHNsZZAcoNUEIA:1781568586786&q=jogos+de+copa+do+mundo&si=AL3DRZHEhiMLEgZ6ptfJdlKOuijTyen89BMlkLHvUgNaFHJkDdblgC0Uu52KsaMtKHJ257eHidzewwozW6B-0hByfVSviU3hplbuKOuKgLGKo-UfqY8XpKKbPQHcrUEhYND9WUcTki1Ad6WyWWBgZI8WqSbOOQW9UFXKafPqTKhEN0a5SxjSIL-BmStF6ruM0H3lpNZult8-TZjrX3LY545NsP2NsANBVyGcoCqi4fSpc05EXJuUkSh-MSclMoitnVMG1qTr63Ukt0a2RvvcDeRfknIskDWTbW9N2u_uITdeArhXizjUhJRvDXd7jIhZhxeG_NdevC4W', '_blank')">
     <img src="noticias/arte copa.png" alt="Sinner Tênis" class="secondary-image" loading="lazy">
     
     <div class="secondary-content">
@@ -597,7 +574,7 @@
     </div>
 </article>
                         
-<article class="secondary-card card-2" onclick="window.open('https://www.google.com/search?q=nba+tabela+classificacao', '_blank')">
+<article class="secondary-card secondary-card--nba" onclick="window.open('https://www.google.com/search?q=nba+tabela+classificacao', '_blank')">
     <img src="noticias/logo nba.jpg" alt="NBA 2026" class="secondary-image" loading="lazy">
     
     <div class="secondary-content">
@@ -607,7 +584,7 @@
 </article>
                         
 <article 
-    class="secondary-card card-3"
+    class="secondary-card secondary-card--laliga"
     onclick="window.open('https://www.google.com/search?q=laliga+tabela', '_blank')"
 >
 
@@ -633,7 +610,7 @@
 </article>
                         
 <article 
-    class="secondary-card card-4"
+    class="secondary-card secondary-card--brasileirao"
     onclick="window.open('https://www.google.com/search?q=tabela+s%C3%A9rie+a+brasileir%C3%A3o&oq=tabela+s%C3%A9rie+a+bras&gs_lcrp=EgZjaHJvbWUqDAgAEAAYFBiHAhiABDIMCAAQABgUGIcCGIAEMgwIARAAGBQYhwIYgAQyBggCEEUYOTIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDc5OTJqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8&sourceid=chrome&ie=UTF-8', '_blank')"
 >
 
@@ -658,7 +635,7 @@
 
 </article>
                         
-<article class="secondary-card card-5" onclick="window.open('https://www.google.com/search?q=brasileir%C3%A3o+s%C3%A9rie+b+TABELA&sca_esv=3c5a6a744a0367a6&sxsrf=ANbL-n7pQ1Hg-i8IU87IQceTRuykdpwatg%3A1780096095333&ei=XxwaapiKFNDU1sQPpemyoQw&biw=1536&bih=730&ved=0ahUKEwjYtbbbzt-UAxVQqpUCHaW0LMQQ4dUDCBA&uact=5&oq=brasileir%C3%A3o+s%C3%A9rie+b+TABELA&gs_lp=Egxnd3Mtd2l6LXNlcnAiHGJyYXNpbGVpcsOjbyBzw6lyaWUgYiBUQUJFTEEyCBAAGIAEGLEDMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGO8FSMcNUNQBWNkMcAF4AZABAJgB3AGgAYsHqgEFMC41LjG4AQPIAQD4AQGYAgegAsYHwgIKEAAYRxjWBBiwA8ICDRAAGIAEGIoFGEMYsAPCAg4QABjkAhjWBBiwA9gBAcICFxAuGNgCGLgGGNoGGNwGGMgDGLAD2AEBwgIXEC4Y3AYYuAYY2gYY2AIYyAMYsAPYAQHCAg0QABiABBgUGIcCGLEDwgIKEAAYgAQYFBiHAsICCxAuGIAEGLEDGIMBmAMAiAYBkAYTugYGCAEQARgJkgcFMS41LjGgB54nsgcFMC41LjG4B7oHwgcFMi01LjLIBy-ACAE&sclient=gws-wiz-serp', '_blank')">
+<article class="secondary-card secondary-card--serieb" onclick="window.open('https://www.google.com/search?q=brasileir%C3%A3o+s%C3%A9rie+b+TABELA&sca_esv=3c5a6a744a0367a6&sxsrf=ANbL-n7pQ1Hg-i8IU87IQceTRuykdpwatg%3A1780096095333&ei=XxwaapiKFNDU1sQPpemyoQw&biw=1536&bih=730&ved=0ahUKEwjYtbbbzt-UAxVQqpUCHaW0LMQQ4dUDCBA&uact=5&oq=brasileir%C3%A3o+s%C3%A9rie+b+TABELA&gs_lp=Egxnd3Mtd2l6LXNlcnAiHGJyYXNpbGVpcsOjbyBzw6lyaWUgYiBUQUJFTEEyCBAAGIAEGLEDMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGO8FSMcNUNQBWNkMcAF4AZABAJgB3AGgAYsHqgEFMC41LjG4AQPIAQD4AQGYAgegAsYHwgIKEAAYRxjWBBiwA8ICDRAAGIAEGIoFGEMYsAPCAg4QABjkAhjWBBiwA9gBAcICFxAuGNgCGLgGGNoGGNwGGMgDGLAD2AEBwgIXEC4Y3AYYuAYY2gYY2AIYyAMYsAPYAQHCAg0QABiABBgUGIcCGLEDwgIKEAAYgAQYFBiHAsICCxAuGIAEGLEDGIMBmAMAiAYBkAYTugYGCAEQARgJkgcFMS41LjGgB54nsgcFMC41LjG4B7oHwgcFMi01LjLIBy-ACAE&sclient=gws-wiz-serp', '_blank')">
     <img src="noticias/Série B.png" alt="Botafogo" class="secondary-image" loading="lazy">
     
     <div class="secondary-content">
@@ -682,7 +659,7 @@
                 <!-- Brand Column -->
                 <div class="footer-brand">
                     <div class="footer-logo">
-                        <img src="./imagens/logo gaeel sem fundo.png" alt="GAEEL" class="logo-img" loading="lazy" decoding="async">
+                        <img src="./imagens/logo atualizada.png" alt="GAEEL" class="logo-img" loading="lazy" decoding="async">
                     </div>
                     
                     <p class="footer-description">
