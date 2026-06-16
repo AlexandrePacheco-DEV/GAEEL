@@ -268,17 +268,48 @@
 
 .secondary-card {
     background: #fff;
-    border-radius: 22px;
+    border-radius: 20px;
     overflow: hidden;
     transition: 0.35s ease;
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     cursor: pointer;
-    border: 1px solid rgba(0,0,0,0.04);
+    border: 1px solid #e5e7eb;
 }
 
 .secondary-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 20px 40px rgba(0,0,0,0.14);
+}
+
+.card-1 {
+    background: linear-gradient(135deg, #BF953F 0%, #FCF6BA 25%, #B38728 50%, #FBF5B7 75%, #AA771C 100%) !important;
+    background-size: 200% 200% !important;
+    animation: goldShine 5s linear infinite !important;
+    box-shadow: 0 20px 50px rgba(184, 134, 11, 0.45), inset 0 0 20px rgba(255, 255, 255, 0.4) !important;
+    border: 2px solid #D4AF37 !important;
+    border-radius: 20px !important;
+}
+
+@keyframes goldShine {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.card-1 .secondary-content {
+    background: transparent !important;
+}
+
+.card-1 .secondary-title {
+    color: #001F3F !important;
+    font-weight: 900 !important;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) !important;
+}
+
+.card-1 .secondary-category {
+    background: #001F3F !important;
+    color: #FFD700 !important;
+    border: 1px solid #FFD700 !important;
 }
 
 .secondary-image {
@@ -364,10 +395,33 @@
 
     .secondary-grid {
         grid-template-columns: 1fr;
+        gap: 1.2rem;
+        padding: 0 0.5rem;
+    }
+
+    .secondary-card {
+        border-radius: 18px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.06);
     }
 
     .secondary-image {
-        height: 220px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .secondary-content {
+        padding: 1.25rem;
+    }
+
+    .secondary-category {
+        padding: 0.35rem 0.8rem;
+        font-size: 0.7rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .secondary-title {
+        font-size: 1.1rem;
+        line-height: 1.4;
     }
 
     .carousel-prev,
@@ -534,16 +588,16 @@
 
                     
                     <div class="secondary-grid" id="secondaryGrid">
-<article class="secondary-card" onclick="window.open('https://www.espn.com.br/tenis/calendario', '_blank')">
-    <img src="noticias/logo atp.png" alt="Sinner Tênis" class="secondary-image" loading="lazy">
+<article class="secondary-card card-1" onclick="window.open('https://www.google.com/search?sa=X&sca_esv=e46683753607c2b3&biw=1366&bih=633&sxsrf=ANbL-n57fLVMKbaWUy4yUHNsZZAcoNUEIA:1781568586786&q=jogos+de+copa+do+mundo&si=AL3DRZHEhiMLEgZ6ptfJdlKOuijTyen89BMlkLHvUgNaFHJkDdblgC0Uu52KsaMtKHJ257eHidzewwozW6B-0hByfVSviU3hplbuKOuKgLGKo-UfqY8XpKKbPQHcrUEhYND9WUcTki1Ad6WyWWBgZI8WqSbOOQW9UFXKafPqTKhEN0a5SxjSIL-BmStF6ruM0H3lpNZult8-TZjrX3LY545NsP2NsANBVyGcoCqi4fSpc05EXJuUkSh-MSclMoitnVMG1qTr63Ukt0a2RvvcDeRfknIskDWTbW9N2u_uITdeArhXizjUhJRvDXd7jIhZhxeG_NdevC4W', '_blank')">
+    <img src="noticias/arte copa.png" alt="Sinner Tênis" class="secondary-image" loading="lazy">
     
     <div class="secondary-content">
-        <span class="secondary-category">TÊNIS</span>
-        <h3 class="secondary-title">Tênis Masculino: Calendário 2026</h3>
+        <span class="secondary-category">COPA DO MUNDO 2026</span>
+        <h3 class="secondary-title">COPA DO MUNDO: Fase de Grupos</h3>
     </div>
 </article>
                         
-<article class="secondary-card" onclick="window.open('https://www.google.com/search?q=nba+tabela+classificacao', '_blank')">
+<article class="secondary-card card-2" onclick="window.open('https://www.google.com/search?q=nba+tabela+classificacao', '_blank')">
     <img src="noticias/logo nba.jpg" alt="NBA 2026" class="secondary-image" loading="lazy">
     
     <div class="secondary-content">
@@ -553,7 +607,7 @@
 </article>
                         
 <article 
-    class="secondary-card"
+    class="secondary-card card-3"
     onclick="window.open('https://www.google.com/search?q=laliga+tabela', '_blank')"
 >
 
@@ -579,7 +633,7 @@
 </article>
                         
 <article 
-    class="secondary-card"
+    class="secondary-card card-4"
     onclick="window.open('https://www.google.com/search?q=tabela+s%C3%A9rie+a+brasileir%C3%A3o&oq=tabela+s%C3%A9rie+a+bras&gs_lcrp=EgZjaHJvbWUqDAgAEAAYFBiHAhiABDIMCAAQABgUGIcCGIAEMgwIARAAGBQYhwIYgAQyBggCEEUYOTIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDc5OTJqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8&sourceid=chrome&ie=UTF-8', '_blank')"
 >
 
@@ -604,7 +658,7 @@
 
 </article>
                         
-<article class="secondary-card" onclick="window.open('https://www.google.com/search?q=brasileir%C3%A3o+s%C3%A9rie+b+TABELA&sca_esv=3c5a6a744a0367a6&sxsrf=ANbL-n7pQ1Hg-i8IU87IQceTRuykdpwatg%3A1780096095333&ei=XxwaapiKFNDU1sQPpemyoQw&biw=1536&bih=730&ved=0ahUKEwjYtbbbzt-UAxVQqpUCHaW0LMQQ4dUDCBA&uact=5&oq=brasileir%C3%A3o+s%C3%A9rie+b+TABELA&gs_lp=Egxnd3Mtd2l6LXNlcnAiHGJyYXNpbGVpcsOjbyBzw6lyaWUgYiBUQUJFTEEyCBAAGIAEGLEDMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGO8FSMcNUNQBWNkMcAF4AZABAJgB3AGgAYsHqgEFMC41LjG4AQPIAQD4AQGYAgegAsYHwgIKEAAYRxjWBBiwA8ICDRAAGIAEGIoFGEMYsAPCAg4QABjkAhjWBBiwA9gBAcICFxAuGNgCGLgGGNoGGNwGGMgDGLAD2AEBwgIXEC4Y3AYYuAYY2gYY2AIYyAMYsAPYAQHCAg0QABiABBgUGIcCGLEDwgIKEAAYgAQYFBiHAsICCxAuGIAEGLEDGIMBmAMAiAYBkAYTugYGCAEQARgJkgcFMS41LjGgB54nsgcFMC41LjG4B7oHwgcFMi01LjLIBy-ACAE&sclient=gws-wiz-serp', '_blank')">
+<article class="secondary-card card-5" onclick="window.open('https://www.google.com/search?q=brasileir%C3%A3o+s%C3%A9rie+b+TABELA&sca_esv=3c5a6a744a0367a6&sxsrf=ANbL-n7pQ1Hg-i8IU87IQceTRuykdpwatg%3A1780096095333&ei=XxwaapiKFNDU1sQPpemyoQw&biw=1536&bih=730&ved=0ahUKEwjYtbbbzt-UAxVQqpUCHaW0LMQQ4dUDCBA&uact=5&oq=brasileir%C3%A3o+s%C3%A9rie+b+TABELA&gs_lp=Egxnd3Mtd2l6LXNlcnAiHGJyYXNpbGVpcsOjbyBzw6lyaWUgYiBUQUJFTEEyCBAAGIAEGLEDMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGO8FSMcNUNQBWNkMcAF4AZABAJgB3AGgAYsHqgEFMC41LjG4AQPIAQD4AQGYAgegAsYHwgIKEAAYRxjWBBiwA8ICDRAAGIAEGIoFGEMYsAPCAg4QABjkAhjWBBiwA9gBAcICFxAuGNgCGLgGGNoGGNwGGMgDGLAD2AEBwgIXEC4Y3AYYuAYY2gYY2AIYyAMYsAPYAQHCAg0QABiABBgUGIcCGLEDwgIKEAAYgAQYFBiHAsICCxAuGIAEGLEDGIMBmAMAiAYBkAYTugYGCAEQARgJkgcFMS41LjGgB54nsgcFMC41LjG4B7oHwgcFMi01LjLIBy-ACAE&sclient=gws-wiz-serp', '_blank')">
     <img src="noticias/Série B.png" alt="Botafogo" class="secondary-image" loading="lazy">
     
     <div class="secondary-content">
