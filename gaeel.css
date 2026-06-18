@@ -988,11 +988,18 @@ body {
     flex-shrink: 0;
     width: 3rem;
     height: 3rem;
-    background: rgba(0, 31, 63, 0.1);
+    background: radial-gradient(
+        circle at 85% 15%,
+        #0A1FA8 0%,
+        #06136B 25%,
+        #01033C 55%,
+        #01001F 100%
+    );
     border-radius: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--white);
 }
 
 .feature-title {
