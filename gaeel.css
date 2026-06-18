@@ -949,6 +949,12 @@ body {
 
 .about-content {
     padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-content .section-badge {
+    align-self: center;
 }
 
 .text-large {
@@ -1013,15 +1019,7 @@ body {
     }
 
     .about-content {
-        padding-top: 4rem;
-    }
-
-    .about-content .section-badge {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        margin-bottom: 0;
+        /* Padding removed to allow centered badge in flow */
     }
 }
 
@@ -1156,6 +1154,12 @@ body {
 .badge-success {
     background: var(--success);
     color: var(--white);
+}
+
+.badge-danger {
+    background: linear-gradient(135deg, #DC2626 0%, #B91C1C 100%);
+    color: var(--white);
+    box-shadow: 0 2px 8px rgba(220, 38, 38, 0.3);
 }
 
 .badge-warning {
@@ -1809,12 +1813,12 @@ body {
    ========================================= */
 
 .footer {
-    background: radial-gradient(
-        circle at 85% 15%,
-        #0A1FA8 0%,
-        #06136B 25%,
-        #01033C 55%,
-        #01001F 100%
+    background: linear-gradient(
+        180deg,
+        #01001F 0%,
+        #01033C 30%,
+        #06136B 70%,
+        #0A1FA8 100%
     );
     color: var(--white);
 }

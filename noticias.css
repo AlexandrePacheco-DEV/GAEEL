@@ -587,12 +587,12 @@ main,
 
 /* FOOTER */
 .footer {
-    background: radial-gradient(
-        circle at 85% 15%,
-        #0A1FA8 0%,
-        #06136B 25%,
-        #01033C 55%,
-        #01001F 100%
+    background: linear-gradient(
+        180deg,
+        #01001F 0%,
+        #01033C 30%,
+        #06136B 70%,
+        #0A1FA8 100%
     );
     color: var(--white);
     text-align: center;
@@ -1347,8 +1347,14 @@ body {
 
 /* FOOTER */
 .footer {
-    background: var(--primary-blue);
-    color: var(--text-light);
+    background: linear-gradient(
+        180deg,
+        #01001F 0%,
+        #01033C 30%,
+        #06136B 70%,
+        #0A1FA8 100%
+    );
+    color: var(--white);
     text-align: center;
     padding: 3rem 2rem;
 }
